@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/global.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 580px)"
+      href="style/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Ship Battle</title>
+  </head>
+  <body>
+    <nav>
+      <div class="topnav">
+        <a class="logo" href="accueil.html"
+          ><img src="src/img/SWB.png" alt=""
+        /></a>
+        <a
+          href="javascript:void(0)"
+          class="burger-icon"
+          onclick="showBurgerMenu()"
+        >
+          <i class="fa fa-bars fa-2x"></i
+        ></a>
+      </div>
+      <div class="mobile-links">
+        <a href="empire-ships.html">EMPIRE</a>
+        <a href="comparison.html">COMPARISON</a>
+        <a href="rebel-ships.html">REBEL</a>
+      </div>
+    </nav>
     <div class="comparison-boxes">
-        <div class="ship-box">
-            <p>Empire Ship</p>
-        </div>
-        
-        <div class="ship-box">
-            <p>Rebel Ship</p>
-        </div>
+      <div class="ship-box">
+        <p>Empire Ship</p>
+      </div>
+
+      <div class="ship-box">
+        <p>Rebel Ship</p>
+      </div>
     </div>
     <div class="button">
-        <button class="battle">
-            battle
-        </button>
+      <button class="battle">battle</button>
     </div>
     <div class="spec">
-        <div class="spec-box">
-
-        </div>
-        <div class="spec-box">
-            
-        </div>
+      <div class="spec-box"></div>
+      <div class="spec-box"></div>
     </div>
     <div class="winner">
-        <button>Winner</button>
+      <button>Winner</button>
     </div>
-</body>
+  </body>
+  <script src="index.js"></script>
 </html>
