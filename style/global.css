@@ -1,5 +1,12 @@
+body {
+  margin: 0;
+}
 nav {
   background-color: transparent;
+}
+footer {
+  min-height: 20vh;
+  background-color: black;
 }
 .topnav {
   display: flex;
@@ -26,7 +33,7 @@ i.fa-eclipse {
   border: 1px solid red;
   color: black;
 }
-.background-div{
+.background-div {
   background-image: url("/src/img/fond-accueil.jpg"); /* src/img/fond-accueil.jpg */
   border: 1px solid rgb(51, 53, 185);
 }
