@@ -1,6 +1,10 @@
 nav {
   background-color: transparent;
 }
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
 .show-links {
   display: flex;
   flex-direction: column;
@@ -10,6 +14,15 @@ nav {
 .mobile-links {
   display: none;
 }
-.logo {
+.logo img {
+  max-height: 2.5em;
+  max-width: 2.5em;
+}
+.fa {
+  color: black;
+}
+i.fa-eclipse {
+  min-width: 35px;
   border: 1px solid red;
+  color: black;
 }
