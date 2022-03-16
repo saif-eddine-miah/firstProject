@@ -105,3 +105,7 @@ div button{
   padding:16px 31px;
   text-shadow:0px 1px 0px #ffffff;
 }
+.bot-menu-cont{
+  display: flex;
+  
+}
