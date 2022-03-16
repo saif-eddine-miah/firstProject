@@ -1,5 +1,6 @@
-const burgerLogo = document.querySelector(".mobile-links")
+const burgerLinks = document.querySelector(".mobile-links")
 
 function showBurgerMenu() {
-  burgerLogo.classList.toggle("mobile-links");
+  burgerLinks.classList.toggle("show-links");
+  burgerLinks.classList.toggle("mobile-links");
 }

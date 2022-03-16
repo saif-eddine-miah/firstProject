@@ -1,6 +1,15 @@
+nav {
+  background-color: transparent;
+}
 .show-links {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
 }
 .mobile-links {
   display: none;
+}
+.logo {
+  border: 1px solid red;
 }
