@@ -78,9 +78,9 @@ i.fa-eclipse {
 .comparison-boxes{
     display: flex;
     justify-content: center;
-    gap: 5rem;
-.fa-facebook,{}
-.fa-twitter,{}
+    gap: 5rem;}
+/*.fa-facebook,{}
+.fa-twitter,{}*/
 .fa-envelope {
   margin-top: 16px;
   padding: 16px;
