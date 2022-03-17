@@ -33,9 +33,7 @@ i.fa-eclipse {
   border: 1px solid red;
   color: black;
 }
-.background-div {
-  background-image: url("/src/img/fond-accueil.jpg"); /* src/img/fond-accueil.jpg */
-}
+
 .comparison-boxes{
     display: flex;
     justify-content: center;
@@ -104,15 +102,8 @@ div button{
   padding:16px 31px;
   text-shadow:0px 1px 0px #ffffff;
 }
-.bot-menu-cont{
-  display: flex;
 
-}
-.bot-menu{
-  display: flex;
-  flex-direction: column;
-  color:yellow;
-}
+
 body {
   margin: 0;
 }
@@ -126,6 +117,7 @@ footer {
 .topnav {
   display: flex;
   justify-content: space-between;
+  
 }
 .show-links {
   display: flex;
@@ -149,6 +141,25 @@ i.fa-eclipse {
   color: black;
 }
 .background-div {
-  background-image: url("/src/img/fond-accueil.jpg"); /* src/img/fond-accueil.jpg */
-  border: 1px solid rgb(51, 53, 185);
+  background-image: url("/src/img/fond-accueil.jpg"); /* fond accueil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.bot-menu-cont{     /* Menu du bas accueil conteneur */
+  display: flex;
+  
+  
+}
+.bot-menu{     /* Menu du bas accueil conteneur */
+  display: flex;
+  flex-direction: column;
+  color:yellow;
+  align-items: center;
+  background-color: #777777c0 ;
+  padding:0.2rem 0.8rem ;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
 }
