@@ -95,9 +95,6 @@ i.fa-eclipse {
   padding: 16px;
   color: white;
 }
-.background-div {
-  /* src/img/fond-accueil.jpg */
-}
 .comparison-boxes {
   display: flex;
   justify-content: center;
