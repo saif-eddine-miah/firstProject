@@ -49,6 +49,9 @@ footer ul {
 }
 .fond-accueil{
   background-image: url("/src/img/fond-accueil.jpg"); 
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer-contact {
   margin: 0 auto;
@@ -218,7 +221,7 @@ i.fa-eclipse {
   color: black;
 }
 .background-div {
-  background-image: url("/src/img/fond-accueil.jpg"); /* fond accueil */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
