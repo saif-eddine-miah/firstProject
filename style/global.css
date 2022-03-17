@@ -163,3 +163,13 @@ i.fa-eclipse {
   border-radius: 1rem;
   margin: 0 0.5rem;
 }
+.hero-1plan{
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  align-items: center;
+} 
+.black-star{
+  margin-left: -180rem;
+  
+}
