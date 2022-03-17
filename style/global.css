@@ -113,3 +113,42 @@ div button{
   flex-direction: column;
   color:yellow;
 }
+body {
+  margin: 0;
+}
+nav {
+  background-color: transparent;
+}
+footer {
+  min-height: 20vh;
+  background-color: black;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+.show-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+.mobile-links {
+  display: none;
+}
+.logo img {
+  max-height: 2.5em;
+  max-width: 2.5em;
+}
+.fa {
+  color: black;
+}
+i.fa-eclipse {
+  min-width: 35px;
+  border: 1px solid red;
+  color: black;
+}
+.background-div {
+  background-image: url("/src/img/fond-accueil.jpg"); /* src/img/fond-accueil.jpg */
+  border: 1px solid rgb(51, 53, 185);
+}
