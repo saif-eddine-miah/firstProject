@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
 }
@@ -97,3 +98,68 @@ footer ul {
   padding: 16px;
   color: white;
 }
+=======
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.fondhangarempire{
+  background-image: url("/src/img/Hangar.jpg");
+}
+.fondchasseurtie {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.photochasseurtie {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.chasseurtie {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Noto Sans', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.chasseurtie h1 {
+  text-align: center;
+}
+
+.chasseurtie, h1, p {
+  margin: 1rem;
+}
+
+.specs {
+  background-color: rgb(185, 189, 192);
+  margin: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 2rem;
+  
+  }
+
+  .specs h3{
+    text-align: center;
+  }
+
+  .Pilotechasseurtie {
+    display: none;
+  }
+>>>>>>> 556742e43d9fdd90e0b93ff62fc26e85fafdba16
