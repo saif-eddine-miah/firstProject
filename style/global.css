@@ -235,3 +235,6 @@ i.fa-eclipse {
   margin-left: -180rem;
   
 }
+.welcome{
+  flex-wrap: wrap;
+}
