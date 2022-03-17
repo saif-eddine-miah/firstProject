@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+}
+nav {
+  justify-items: center;
+  align-content: center;
+  display: grid;
+}
+.burger-icon {
+  display: none;
+}
+.logo img {
+  max-height: 6em;
+}
+.mobile-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.mobile-links a {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "Noto Sans", sans-serif;
+  font-stretch: condensed;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, #ffe919, #ffe919 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.mobile-links a:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-position: 0 100%;
+}
+footer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+  padding: 16px;
+  background-color: black;
+  text-align: center;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  min-width: 20em;
+  padding: 8px;
+  margin-top: 16px;
+}
+form label {
+  color: black;
+}
+form input,
+form button {
+  width: 80%;
+}
+form input {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 8px;
+}
+footer ul li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-contact {
+  margin: 0 auto;
+}
+#form-button {
+  background-color: var(--accent-color);
+  color: black;
+  margin-top: 20px;
+  padding: 10px 10px;
+  width: 40%;
+  border-radius: 25px;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-envelope {
+  margin-top: 16px;
+  padding: 16px;
+  color: white;
+}
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.fondhangarempire{
+  background-image: url("/src/img/Hangar.jpg");
+}
+.fondchasseurtie {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.photochasseurtie {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.chasseurtie {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Noto Sans', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.chasseurtie h1 {
+  text-align: center;
+}
+
+.chasseurtie, h1, p {
+  margin: 1rem;
+}
+
+.specs {
+  background-color: rgb(185, 189, 192);
+  margin: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 2rem;
+  
+  }
+
+  .specs h3{
+    text-align: center;
+  }
+
+  .Pilotechasseurtie {
+    display: none;
+  }

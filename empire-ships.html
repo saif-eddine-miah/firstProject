@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style\desktop.css"
+      media="screen and (min-width: 992px"
+    />
+    <link
+      rel="stylesheet"
+      href="style\global.css"
+      media="screen and (max-width: 580px)"
+    />
+    <link
+      rel="stylesheet"
+      href="style\tablet.css"
+      media="screen and (min-width: 576px) and (max-width: 992px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Vaisseaux de l'Empire</title>
+  </head>
+
+  <body>
+    <div class="fondhangarempire">
+      <nav>
+        <div class="topnav">
+          <a class="logo" href="accueil.html"
+            ><img src="src/img/SWB.png" alt=""
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="burger-icon"
+            onclick="showBurgerMenu()"
+          >
+            <i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+        <div class="mobile-links">
+          <a href="empire-ships.html">EMPIRE</a>
+          <a href="comparison.html">COMPARISON</a>
+          <a href="rebel-ships.html">REBEL</a>
+        </div>
+      </nav>
+      <div class="fondchasseurtie">
+        <div class="photochasseurtie slides fade">
+          <div class="number-text">1/5</div>
+          <img src="src\img\Chasseur-tie.png" alt="Photo chasseur TIE" />
+        </div>
+      </div>
+    </div>
+
+    <div class="chasseurtie">
+      <h1>Le chasseur TIE</h1>
+      <p>
+        Le chasseur TIE (Twin Ion Engine ou Double Moteur Ionique) fut construit
+        par le système de flotte Sienar. Il est assurément le chasseur qui aura
+        vu le plus de modèles différents. Ce chasseur était rapide et maniable.
+        Le chasseur TIE est redoutable en combat rapproché. Il fut le fleuron de
+        la chasse impériale à raison de plus d'un million d'unités en service en
+        l'an 3 ap.BY. Son bruit caractéristique et son aspect menaçant en firent
+        un engin très reconnaissable. <br />
+        Toutefois, le chasseur TIE était conçu pour un déploiement en masse, au
+        détriment de la qualité. Son équipement était minimaliste, ce qui en
+        fait un appareil vulnérable. Ainsi, le chasseur TIE n’était ni équipé
+        d'hyperpropulseur ni d'astromécano. Les boucliers déflecteurs étaient
+        inexistants, tout comme les systèmes de survie.
+      </p>
+    </div>
+
+    <div class="specs">
+      <div class="specstext">
+        <h3>Spécificités</h3>
+        <ul>
+          <li>Classe : chasseur stellaire</li>
+          <li>Construction : Sienar Fleet System</li>
+          <li>Longueur : 6,3 mètres</li>
+          <li>Largeur : 6,4 mètres</li>
+          <li>Vitesse maximale atmosphérique : 1200 km/h</li>
+          <li>Indice de manoeuvrabilité : 96</li>
+          <li>Coût : 60 000 crédits</li>
+          <br />
+        </ul>
+      </div>
+      <div class="Pilotechasseurtie">
+        <img
+          class="imgpilote"
+          src="src\img\figurine-tie-fighter-pilot-backstabber-mouse-droid-exclusive-kotobukiya_ccexpress.png"
+          alt="Pilote chasseur TIE"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
