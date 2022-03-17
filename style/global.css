@@ -47,6 +47,9 @@ footer ul {
   margin: 0;
   list-style-type: none;
 }
+.fond-accueil{
+  background-image: url("/src/img/fond-accueil.jpg"); 
+}
 .footer-contact {
   margin: 0 auto;
 }
@@ -80,10 +83,11 @@ i.fa-eclipse {
   color: black;
 }
 
-.comparison-boxes{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;}
+.comparison-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
 /*.fa-facebook,{}
 .fa-twitter,{}*/
 .fa-envelope {
@@ -92,7 +96,7 @@ i.fa-eclipse {
   color: white;
 }
 .background-div {
-  background-image: url("/src/img/fond-accueil.jpg"); /* src/img/fond-accueil.jpg */
+  /* src/img/fond-accueil.jpg */
 }
 .comparison-boxes {
   display: flex;
@@ -190,7 +194,6 @@ footer {
 .topnav {
   display: flex;
   justify-content: space-between;
-  
 }
 .show-links {
   display: flex;
@@ -205,6 +208,10 @@ footer {
   max-height: 2.5em;
   max-width: 2.5em;
 }
+.burger-icon {
+  color: white;
+}
+
 .fa {
   color: black;
 }
@@ -218,46 +225,43 @@ i.fa-eclipse {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.bot-menu-cont{     /* Menu du bas accueil conteneur */
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
   display: flex;
-  
-  
 }
-.bot-menu{     /* Menu du bas accueil conteneur */
+.bot-menu {
+  /* Menu du bas accueil conteneur */
   display: flex;
   flex-direction: column;
-  color:yellow;
+  color: yellow;
   align-items: center;
-  background-color: #777777c0 ;
-  padding:0.2rem 0.8rem ;
+  background-color: #777777c0;
+  padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   margin: 0 0.5rem;
 }
-.hero-1plan{
+.hero-1plan {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
-} 
-.black-star{
-  margin-left: -180rem;
-  
 }
-.fondhangarempire{
+.black-star {
+  margin-left: -180rem;
+}
+.fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
 }
 .fondchasseurtie {
-  position:relative;
+  position: relative;
   width: 100%;
   height: 30rem;
-  padding: 5px; 
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-   
 }
 
 .photochasseurtie {
@@ -277,7 +281,7 @@ h1 {
   background-color: grey;
   margin: 0%;
   padding: 0%;
-  font-family:'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
 }
@@ -285,23 +289,23 @@ h1 {
   text-align: center;
 }
 
-.chasseurtie, h1, p {
+.chasseurtie,
+h1,
+p {
   margin: 1rem;
 }
 
 .specstext {
   background-color: rgb(185, 189, 192);
   margin: 2rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
-  
-  }
+}
 
-  .specs h3{
-    text-align: center;
-  }
+.specs h3 {
+  text-align: center;
+}
 
-  .Pilotechasseurtie {
-    display: none;
-  }
-
+.Pilotechasseurtie {
+  display: none;
+}
