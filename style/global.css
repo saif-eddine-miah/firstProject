@@ -47,9 +47,6 @@ footer ul {
   margin: 0;
   list-style-type: none;
 }
-.slideshow-container {
-  background-color: red;
-}
 .prev,
 .next {
   cursor: pointer;
@@ -103,7 +100,6 @@ footer ul {
 }
 i.fa-eclipse {
   min-width: 35px;
-  border: 1px solid red;
   color: black;
 }
 
