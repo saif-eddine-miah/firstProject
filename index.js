@@ -118,6 +118,8 @@ function showSlides(n) {
      slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block"; 
+    const specPageTitle = document.getElementById("spec-page-title")
+    specPageTitle.textContent = empireShipsArray[i].title
   }
 
 const burgerLinks = document.querySelector(".mobile-links")
