@@ -86,21 +86,21 @@ const rebelShipsArray = [
     title : "Y-Wing",
     description : "Le chasseur Y-Wing BTL, plus simplement nommé Y-Wing BTL ou Y-Wing, était un bombardier utilisé par l'Alliance Rebelle pour combattre l'Empire Galactique comme durant la bataille d'Endor, puis par la Nouvelle République. Il fut à l'origine conçu durant la Guerre des Clones où la République Galactique l'utilisait contre la Confédération des Systèmes Indépendants. ",
     classe : "Bombardier",
-    construction : "Sienar-Jaemus Fleet System",
-    length : "19,1 Mètres",
-    width : "13,5 Mètres sans les ailes et 37,2 mètres",
-    maxSpeed : "950km/h",
-    cost : "250 000 Crédits"
+    construction : "Manufacture Koensayr",
+    length : "23,4 Mètres",
+    width : "12 Mètres",
+    maxSpeed : "1000km/h",
+    cost : "310 000 Crédits"
   },
   {
-    title : "Voilier Solaire Punworcca 116",
-    description : "Le voilier solaire est un vaisseau appartenant à Dooku pendant la Guerre des Clones. C'est un vaisseau furtif n'étant pas détecté par les radars, il peut donc aller partout comme sur Coruscant. Dooku l'utilisa de nombreuses fois durant la guerre comme pour s'enfuir de Geonosis ou, des années après, pour atterrir furtivement dans la forteresse de Ord Mantell City pour capturer Dark Maul. Asajj Ventress en disposait d'un exemplaire aussi, notamment sur Rugosa. ",
-    classe : "Yacht",
-    construction : "Huppla Pasa Tisc Collective",
-    length : "15,2 Mètres",
-    width : "4,6 Mètres",
-    maxSpeed : "1600km/h",
-    cost : "35 000 Crédits sans voile"
+    title : "A-Wing",
+    description : "Le A-Wing RZ-2 était un modèle de chasseur A-Wing fabriqué par les Systèmes d'ingénierie de Kuat, descendant du A-Wing RZ-1. Il était utilisé par la Résistance du temps du conflit contre le Premier Ordre et notamment lors de l'évacuation de D'Qar peu après la destruction de la Base Starkiller, où l'escadron de Tallissan Lintra était composé d'A-Wings RZ-2.",
+    classe : "Chasseur",
+    construction : "Kuat Systems Engineering",
+    length : "7,682 Mètres",
+    width : "4,623 Mètres",
+    maxSpeed : "1350km/h",
+    cost : "190 000 Crédits"
   }
 ]
 showSlides(slideIndex);
