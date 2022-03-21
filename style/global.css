@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-bg-color: #c5c3c6;
   --primary-color: #282828;
   --secondary-color: #757575;
@@ -6,6 +6,8 @@
 body {
   margin: 0;
   background-color: grey;
+  /* width: 100vw;
+  overflow-x:hidden ; */
 }
 nav {
   padding: 8px;
@@ -100,6 +102,9 @@ footer ul {
 
 .fond-accueil {
   background-image: url("/src/img/fond-accueil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer-contact {
   margin: 0 auto;
@@ -146,37 +151,37 @@ i.fa-eclipse {
   gap: 5rem;
 }
 
-.ship-box{
-    width: 10rem;
-    height: 12rem;
-    padding: 10px;
-    background-color: var(--primary-color);
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-  }
-
-.spec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30rem;
-    height: 15rem;
-    padding: 10px;
-    background-color: var(--primary-color);
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
+.ship-box {
+  width: 10rem;
+  height: 12rem;
+  padding: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
 }
 
-.spec-box{
-    width: 12rem;
-    height: 12rem;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
-  }
+.spec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  height: 15rem;
+  padding: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.spec-box {
+  width: 12rem;
+  height: 12rem;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
 .ship-box {
   width: 10rem;
   height: 12rem;
@@ -272,28 +277,26 @@ footer {
   color: #ffe919;
 }
 .background-div {
-  background-image: url("/src/img/fond-accueil.jpg"); /* fond accueil */
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  -ms-appearance:none;
-  appearance:none;
-  outline:0;
-  box-shadow:none;
-  border:0!important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
   background: #6b6b6b;
   background-image: none;
   flex: 1;
-  padding: 0 .5em;
-  color:#fff;
-  cursor:pointer;
-  font-size: .7rem;
-  font-family: 'Open Sans', sans-serif;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
 }
 select::-ms-expand {
   display: none;
@@ -306,35 +309,38 @@ select::-ms-expand {
   line-height: 2.3;
   background: #4d4d4d;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 .select::after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background: #303030;
-  cursor:pointer;
-  pointer-events:none;
-  transition:.25s all ease;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
 }
 .select:hover::after {
   color: #fffb00;
 }
 
-.top-page{
+.top-page {
   background-image: url("/src/img/battle-background.jpeg");
   width: 100%;
   height: 100%;
 }
-.bot-menu-cont{     /* Menu du bas accueil conteneur */
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .bot-menu {
   /* Menu du bas accueil conteneur */
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   color: yellow;
   align-items: center;
   background-color: #777777c0;
@@ -342,15 +348,31 @@ select::-ms-expand {
   border-radius: 1rem;
   margin: 0 0.5rem;
 }
+
 .hero-1plan {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
+  height: 60rem;
+  width: 90%;
+  margin: auto 2rem;
 }
+
 .black-star {
-  margin-left: -180rem;
+  margin-left: -40rem;
+  z-index: 0;
 }
+
+.welcome {
+  max-width: 60%;
+  z-index: 1;
+  flex-wrap: wrap;
+  color: #ffe919;
+  position: absolute;
+  left: 20%;
+}
+
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
 }

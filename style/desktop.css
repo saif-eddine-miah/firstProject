@@ -62,6 +62,13 @@ nav {
   max-height: 100%;
   max-width: 100%;
 }
+.black-star {
+  margin-left: auto;
+}
+.welcome{
+  position: absolute;
+  left: 30%;
+}
 h1 {
   margin: 0;
 }
