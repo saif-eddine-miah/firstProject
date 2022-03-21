@@ -25,7 +25,7 @@ nav {
   font-stretch: condensed;
   color: white;
   text-decoration: none;
-  background: linear-gradient(to right, #ffe919, #ffe919 50%, black 50%);
+  background: linear-gradient(to right, #ffe919, #ffe919 50%, white 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,7 +108,7 @@ body {
 .fondchasseurtie {
   position: relative;
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -130,8 +130,8 @@ h1 {
 
 .chasseurtie {
   background-color: grey;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 2rem;
   font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
@@ -139,24 +139,44 @@ h1 {
 .chasseurtie h1 {
   text-align: center;
 }
-
-.chasseurtie,
-h1,
-p {
-  margin: 1rem;
-}
-
 .specs {
+  padding: 2rem;
+  background-color: grey;
+}
+.slides img {
+  max-width: 100%;
+}
+.specstext {
   background-color: rgb(185, 189, 192);
-  margin: 2rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
 }
-
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -12px;
+  padding: 16px;
+  color: #ffe919;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: white;
+}
 .specs h3 {
   text-align: center;
 }
-
 .Pilotechasseurtie {
   display: none;
 }
