@@ -105,6 +105,7 @@ const rebelShipsArray = [
 ]
 showSlides(slideIndex);
 
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -118,11 +119,29 @@ function showSlides(n) {
      slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block"; 
-    const specPageTitle = document.getElementById("spec-page-title")
-    specPageTitle.textContent = empireShipsArray[i].title
+    const specPageTitle = document.getElementById("spec-page-title");
+    specPageTitle.textContent = empireShipsArray[slideIndex -1].title;
+    const specPageDesc = document.getElementById("spec-page-desc");
+    specPageDesc.textContent = empireShipsArray[slideIndex -1].description;
+    const specClass = document.getElementById("spec-class");
+    specClass.textContent = empireShipsArray[slideIndex -1].classe;
+    const specConstruction = document.getElementById("spec-constructor");
+    specConstruction.textContent = empireShipsArray[slideIndex -1].construction;    const specLongeur = document.getElementById("spec-longeur");
+    specLongeur.textContent = empireShipsArray[slideIndex -1].length;
+    const specLargeur = document.getElementById("spec-largeur");
+    specLargeur.textContent = empireShipsArray[slideIndex -1].width;
+    const specSpeed = document.getElementById("spec-speed");
+    specSpeed.textContent = empireShipsArray[slideIndex -1].maxSpeed;
+    const specCost = document.getElementById("spec-cost");
+    specCost.textContent = empireShipsArray[slideIndex -1].cost;
   }
 
 const burgerLinks = document.querySelector(".mobile-links")
+
+function showBurgerMenu() {
+  burgerLinks.classList.toggle("show-links");
+  burgerLinks.classList.toggle("mobile-links");
+}
 
 function showBurgerMenu() {
   burgerLinks.classList.toggle("show-links");
