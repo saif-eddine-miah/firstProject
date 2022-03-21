@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 580px)"
-      href="style/global.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div class="topnav">
-        <a class="logo" href="accueil.html"
-          ><img src="src/img/SWB.png" alt=""
-        /></a>
-        <a
-          href="javascript:void(0)"
-          class="burger-icon"
-          onclick="showBurgerMenu()"
-        >
-          <i class="fa fa-bars fa-2x"></i
-        ></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style\desktop.css" media="screen and (min-width: 992px">
+  <link rel="stylesheet" href="style\global.css" media="screen and (max-width: 580px)">
+  <link rel="stylesheet" href="style\tablet.css" media="screen and (max-width: 992px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <nav class="fondhangarrebel">
+    <div class="topnav">
+      <a class="logo" href="accueil.html"><img src="src/img/SWB.png" alt="" /></a>
+      <a href="javascript:void(0)" class="burger-icon" onclick="showBurgerMenu()">
+        <i class="fa fa-bars fa-2x"></i></a>
+    </div>
+    <div class="mobile-links">
+      <a href="empire-ships.html">EMPIRE</a>
+      <a href="comparison.html">COMPARISON</a>
+      <a href="rebel-ships.html">REBEL</a>
+    </div>
+  </nav>
+  <div class="fondhangarrebel">
+    <div class="fondfaucon">
+
+      <div class="photofaucon">
+        <img src="src\img\Faucon-Millenium.png" alt="Photo Faucon Millenium" />
       </div>
-      <div class="mobile-links">
-        <a href="empire-ships.html">EMPIRE</a>
-        <a href="comparison.html">COMPARISON</a>
-        <a href="rebel-ships.html">REBEL</a>
-      </div>
-    </nav>
-    <footer>
-      <div class="footer-links">
-        <ul>
-          <li><a href="accueil.html">Accueil</a></li>
-          <li><a href="empire-ships.html">Empire</a></li>
-          <li><a href="rebel-ships.html">Rebels</a></li>
-          <li><a href="comparison.html">Comparateur</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <form action="">
-          <label for="formNom">Nom</label>
-          <input id="formNom" type="text" />
-          <label for="formMail">Mail</label>
-          <input id="formMail" type="text" />
-          <button id="form-button">Envoyer</button>
-        </form>
-      </div>
-      <div class="footer-social">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-        <i class="fa-brands fa-twitter fa-2x"></i>
-        <i class="fa-solid fa-envelope fa-2x"></i>
-      </div>
-    </footer>
-  </body>
-  <script src="index.js"></script>
+    </div>
+  </div>
+
+  <div class="fauconmillenium">
+    <h1>Le Faucon Millenium</h1>
+    <p>Le Faucon Millenium est un vaisseau cargo, d’une capacité de 100 tonnes de fret, dont le modèle fut très répendu
+      à la fin de la République Galactique. Il dispose de deux moteurs subluminiques SRB42 lourdement modifiés par ses
+      propriétaires successifs et d’un Hyperdrive.
+      Il peut embarquer un équipage de six personnes (deux pilotes, deux navigateurs et deux canonniers) ainsi que six
+      passagers.
+      Le Faucon Millenium a eu des propriétaires célèbres tels que Lando Calrissian et Han Solo.
+    </p>
+  </div>
+
+  <div class="specs">
+    <div class="specstext">
+      <h3>Spécificités</h3>
+      <ul>
+        <li>Classe : Cargo</li>
+        <li>Construction : Corporation technique corellienne</li>
+        <li>Longueur : 34,75 mètres</li>
+        <li>Largeur : 25,61 mètres</li>
+        <li>Vitesse maximale atmosphérique : 1050 km/h</li>
+        <li>Indice de manoeuvrabilité : 70</li>
+        <li>Coût : A négocier avec Han Solo</li>
+        <br>
+      </ul>
+    </div>
+    <div class="Pilotefaucon">
+      <img class="imgpilote" src="src\img\han_solo_star_wars_7_ccexpress.png" alt="Pilote Faucon" />
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="empire-ships.html">Empire</a></li>
+        <li><a href="rebel-ships.html">Rebels</a></li>
+        <li><a href="comparison.html">Comparateur</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <form action="">
+        <label for="formNom">Nom</label>
+        <input id="formNom" type="text" />
+        <label for="formMail">Mail</label>
+        <input id="formMail" type="text" />
+        <button id="form-button">Envoyer</button>
+      </form>
+    </div>
+    <div class="footer-social">
+      <i class="fa-brands fa-facebook fa-2x"></i>
+      <i class="fa-brands fa-twitter fa-2x"></i>
+      <i class="fa-solid fa-envelope fa-2x"></i>
+    </div>
+  </footer>
+</body>
+<script src="index.js"></script>
+
 </html>
