@@ -1,3 +1,15 @@
+const burgerLinks = document.querySelector(".mobile-links")
+
+function showBurgerMenu() {
+  burgerLinks.classList.toggle("show-links");
+  burgerLinks.classList.toggle("mobile-links");
+}
+
+function showBurgerMenu() {
+  burgerLinks.classList.toggle("burger-positioning")
+  burgerLinks.classList.toggle("show-links");
+  burgerLinks.classList.toggle("mobile-links");
+}
 let slideIndex = 1;
 const empireShipsArray = [
   {
@@ -135,15 +147,3 @@ function showSlides(n) {
     const specCost = document.getElementById("spec-cost");
     specCost.textContent = empireShipsArray[slideIndex -1].cost;
   }
-
-const burgerLinks = document.querySelector(".mobile-links")
-
-function showBurgerMenu() {
-  burgerLinks.classList.toggle("show-links");
-  burgerLinks.classList.toggle("mobile-links");
-}
-
-function showBurgerMenu() {
-  burgerLinks.classList.toggle("show-links");
-  burgerLinks.classList.toggle("mobile-links");
-}
