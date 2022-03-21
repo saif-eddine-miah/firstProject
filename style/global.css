@@ -1,3 +1,8 @@
+:root{
+  --main-bg-color: #c5c3c6;
+  --primary-color: #282828;
+  --secondary-color: #757575;
+}
 body {
   margin: 0;
   background-color: grey;
@@ -141,6 +146,37 @@ i.fa-eclipse {
   gap: 5rem;
 }
 
+.ship-box{
+    width: 10rem;
+    height: 12rem;
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+  }
+
+.spec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    height: 15rem;
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.spec-box{
+    width: 12rem;
+    height: 12rem;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+  }
 .ship-box {
   width: 10rem;
   height: 12rem;
@@ -242,8 +278,57 @@ footer {
   align-items: center;
 }
 
-.bot-menu-cont {
-  /* Menu du bas accueil conteneur */
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #6b6b6b;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color:#fff;
+  cursor:pointer;
+  font-size: .7rem;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 2em;
+  line-height: 2.3;
+  background: #4d4d4d;
+  overflow: hidden;
+  border-radius: .25em;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: #303030;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #fffb00;
+}
+
+.top-page{
+  background-image: url("/src/img/battle-background.jpeg");
+  width: 100%;
+  height: 100%;
+}
+.bot-menu-cont{     /* Menu du bas accueil conteneur */
   display: flex;
 }
 .bot-menu {
