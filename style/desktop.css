@@ -24,7 +24,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.black-star {
+  margin-left: auto;
+}
+.welcome{
+  position: absolute;
+  left: 30%;
+}
 h1 {
   margin: 0;
 }

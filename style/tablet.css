@@ -12,6 +12,10 @@ nav {
 .logo img {
   max-height: 6em;
 }
+.black-star {
+  margin-left: -40rem;
+ 
+}
 .mobile-links {
   width: 80%;
   display: flex;

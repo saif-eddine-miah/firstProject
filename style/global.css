@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: grey;
+  /* width: 100vw;
+  overflow-x:hidden ; */
 }
 nav {
   padding: 8px;
@@ -53,6 +55,7 @@ footer ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .footer-contact {
   margin: 0 auto;
 }
@@ -221,8 +224,6 @@ i.fa-eclipse {
   color: black;
 }
 .background-div {
-  
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -230,11 +231,13 @@ i.fa-eclipse {
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .bot-menu {
   /* Menu du bas accueil conteneur */
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   color: yellow;
   align-items: center;
   background-color: #777777c0;
@@ -242,19 +245,32 @@ i.fa-eclipse {
   border-radius: 1rem;
   margin: 0 0.5rem;
 }
+
 .hero-1plan {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
-}
-.black-star {
-  margin-left: -180rem;
+  height: 60rem;
+  width: 90%;
+  margin:auto 2rem;
   
 }
-.welcome{
-  flex-wrap: wrap;
+
+.black-star {
+  margin-left: -40rem;
+  z-index: 0;
 }
+
+.welcome{
+  max-width: 60%;
+  z-index: 1;
+  flex-wrap:wrap ;
+  color:#ffe919;
+  position: absolute;
+  left: 20%;
+}
+
 
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
