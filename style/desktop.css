@@ -1,3 +1,4 @@
+/*Page Empire ship*/
 body {
   margin: 0;
   background-color: #ced4da;
@@ -47,6 +48,28 @@ nav {
   position: relative;
   height: 40rem;
   padding: 5px;
+  background-color: #A8B7AB;
+}
+
+/* Image de fonds */
+.fondhangarempire{
+  background-image: url("/src/img/Hangar.jpg");
+}
+.fondchasseurtie {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+ /* Image chasseur sur image de fonds*/
+.photochasseurtie {
+  position: absolute;
+  width: 70%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +158,6 @@ p {
 
 .imgpilote {
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
-
   background-color: #495057;
   border-radius: 2rem;
   width: 30rem;
@@ -209,3 +231,55 @@ form label {
     opacity: 1;
   }
 }
+  /*Page Rebel ship*/
+/* Image de fonds */
+.fondhangarrebel{
+  background-image: url("/src/img/Hangar.jpg");
+}
+
+/* Image faucon sur image de fonds*/
+.fondfaucon {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.photofaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texte Faucon Millenium*/
+.fauconmillenium {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Noto Sans', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.fauconmillenium h1 {
+  text-align: center;
+}
+
+.fauconmillenium, h1, p {
+  margin: 1rem;
+}
+
+/* Specificités Faucon Millenium*/
+  .specs h3{
+    text-align: center;
+  }
+  .specs.specstext h3{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+  }
