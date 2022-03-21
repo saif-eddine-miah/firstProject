@@ -249,7 +249,7 @@ footer {
 }
 .fondchasseurtie {
   position: relative;
-  width: 100%;
+  max-width: 100vw;
   height: 30rem;
   padding: 5px;
   display: flex;
@@ -264,6 +264,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.number-text {
+  color: white;
+}
+.slides {
+  text-align: center;
+}
+.slides img {
+  max-width: 100%;
 }
 
 h1 {
