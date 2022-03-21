@@ -55,31 +55,6 @@ footer ul {
 .footer-contact {
   margin: 0 auto;
 }
-.topnav {
-  display: flex;
-  justify-content: space-between;
-}
-.show-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-}
-.mobile-links {
-  display: none;
-}
-.logo img {
-  max-height: 2.5em;
-  max-width: 2.5em;
-}
-.fa {
-  color: black;
-}
-i.fa-eclipse {
-  min-width: 35px;
-  color: black;
-}
-
 .comparison-boxes {
   display: flex;
   justify-content: center;
