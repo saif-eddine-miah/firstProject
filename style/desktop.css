@@ -1,8 +1,57 @@
+/*Page Empire ship*/
 body {
   margin: 0;
-  background-color: grey;
+  background-color: #ced4da;
+}
+nav {
+  justify-items: center;
+  align-content: center;
+  display: grid;
+}
+.logo img {
+  max-height: 6em;
+}
+.burger-icon {
+  display: none;
+}
+.mobile-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.mobile-links a {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "Noto Sans", sans-serif;
+  font-stretch: condensed;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, #ffe919, #ffe919 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.mobile-links a:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-position: 0 100%;
+}
+.fondhangarempire {
+  background-image: url("/src/img/Hangar.jpg");
+}
+.fondchasseurtie {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  position: relative;
+  height: 40rem;
+  padding: 5px;
+  background-color: #A8B7AB;
 }
 
+/* Image de fonds */
 .fondhangarempire{
   background-image: url("/src/img/Hangar.jpg");
 }
@@ -16,6 +65,7 @@ body {
   justify-content: center;
   }
 
+ /* Image chasseur sur image de fonds*/
 .photochasseurtie {
   position: absolute;
   width: 70%;
@@ -23,6 +73,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
+.slides img {
+  max-height: 100%;
+  max-width: 100%;
 }
 .black-star {
   margin-left: auto;
@@ -34,12 +95,12 @@ body {
 h1 {
   margin: 0;
 }
-
 .chasseurtie {
-  background-color: grey;
+  background-color: #ced4da;
+  color: black;
   margin: 0%;
   padding: 0%;
-  font-family:'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
 }
@@ -47,37 +108,178 @@ h1 {
   text-align: center;
 }
 
-.chasseurtie, h1, p {
+.chasseurtie,
+h1,
+p {
   margin: 2rem;
 }
-
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  margin-top: -12px;
+  padding: 16px;
+  color: #ffe919;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: white;
+}
 .specs {
   display: flex;
-  justify-content: space-between;
-  margin:5rem;
-    }
+  justify-content: center;
+  gap: 10rem;
+}
 
-  .specstext {
-  background-color: rgb(185, 189, 192);
-  width: 30rem;
-  height:auto;
+.specstext {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  width: 25rem;
+  height: auto;
   border-radius: 2rem;
-  font-family:'Noto Sans', sans-serif;
-  }
+  font-family: "Noto Sans", sans-serif;
+}
 
-  .specstext h3 {
-    text-align: center;
+.specstext h3 {
+  text-align: center;
+}
+
+.imgpilote {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 15rem;
+}
+.Pilotechasseurtie {
+  max-width: 100%;
+}
+.specs.specstext h3 {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+footer {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  min-height: 20vh;
+  margin: 2rem 0 0 0;
+  padding: 16px;
+  background-color: black;
+  text-align: center;
+}
+footer ul li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#form-button {
+  border: 2px solid white;
+  background-color: var(--accent-color);
+  color: white;
+  margin-top: 20px;
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 25px;
+}
+i.fa-brands,
+i.fa-solid,
+form label {
+  color: white;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-    
-  .imgpilote {
-    background-color: rgb(185, 189, 192);
-    border-radius: 2rem;
-    width:30rem;
-    height: 15rem;
-         
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  /*Page Rebel ship*/
+/* Image de fonds */
+.fondhangarrebel{
+  background-image: url("/src/img/Hangar.jpg");
+}
+
+/* Image faucon sur image de fonds*/
+.fondfaucon {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.photofaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texte Faucon Millenium*/
+.fauconmillenium {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Noto Sans', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.fauconmillenium h1 {
+  text-align: center;
+}
+
+.fauconmillenium, h1, p {
+  margin: 1rem;
+}
+
+/* Specificités Faucon Millenium*/
+  .specs h3{
+    text-align: center;
   }
   .specs.specstext h3{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
   }
-

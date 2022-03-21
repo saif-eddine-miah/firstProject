@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style/global.css" />
     <link
       rel="stylesheet"
+      href="style\desktop.css"
+      media="screen and (min-width: 992px)"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 576px) and (max-width: 992px)"
+      href="style/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style\global.css"
       media="screen and (max-width: 580px)"
-      href="style/global.css"
     />
     <link
       rel="stylesheet"
@@ -17,32 +27,52 @@
     <title>Ship Battle</title>
   </head>
   <body>
-    <nav>
-      <div class="topnav">
-        <a class="logo" href="accueil.html"
-          ><img src="src/img/SWB.png" alt=""
-        /></a>
-        <a
-          href="javascript:void(0)"
-          class="burger-icon"
-          onclick="showBurgerMenu()"
-        >
-          <i class="fa fa-bars fa-2x"></i
-        ></a>
-      </div>
-      <div class="mobile-links">
-        <a href="empire-ships.html">EMPIRE</a>
-        <a href="comparison.html">COMPARISON</a>
-        <a href="rebel-ships.html">REBEL</a>
-      </div>
-    </nav>
-    <div class="comparison-boxes">
-      <div class="ship-box">
-        <p>Empire Ship</p>
-      </div>
+    <div class="top-page">
+      <nav>
+        <div class="topnav">
+          <a class="logo" href="accueil.html"
+            ><img src="src/img/SWB.png" alt=""
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="burger-icon"
+            onclick="showBurgerMenu()"
+          >
+            <i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+        <div class="mobile-links">
+          <a href="empire-ships.html">EMPIRE</a>
+          <a href="comparison.html">COMPARISON</a>
+          <a href="rebel-ships.html">REBEL</a>
+        </div>
+      </nav>
+      <div class="comparison-boxes">
+        <div class="ship-box">
+          <div class="select">
+            <select name="format" id="format">
+              <option selected disabled>Choose a ship !</option>
+              <option value="Death-Star">Death Star</option>
+              <option value="Radiant">Radiant VII</option>
+              <option value="Finalizer">Finalizer</option>
+              <option value="Devastator">The Devastator</option>
+              <option value="Tie">TIE fighter</option>
+            </select>
+          </div>
+        </div>
 
-      <div class="ship-box">
-        <p>Rebel Ship</p>
+        <div class="ship-box">
+          <div class="select">
+            <select name="format" id="format">
+              <option selected disabled>Choose a ship !</option>
+              <option value="Death-Star">Death Star</option>
+              <option value="Radiant">Radiant VII</option>
+              <option value="Finalizer">Finalizer</option>
+              <option value="Devastator">The Devastator</option>
+              <option value="Tie">TIE fighter</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
     <div class="button">
@@ -80,5 +110,5 @@
       <i class="fa-solid fa-envelope fa-2x"></i>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 </html>
