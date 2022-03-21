@@ -1,3 +1,8 @@
+:root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
+}
 body {
   margin: 0;
 }
@@ -71,7 +76,6 @@ footer ul {
 }
 i.fa-eclipse {
   min-width: 35px;
-  border: 1px solid red;
   color: black;
 }
 .fa-facebook,
@@ -159,14 +163,13 @@ div button {
   width: 40%;
   border-radius: 25px;
 }
-.bot-menu-cont{
+.bot-menu-cont {
   display: flex;
-
 }
-.bot-menu{
+.bot-menu {
   display: flex;
   flex-direction: column;
-  color:yellow;
+  color: yellow;
 }
 body {
   margin: 0;
