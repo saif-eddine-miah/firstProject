@@ -1,11 +1,14 @@
+/*Page Empire ship*/
+
 body {
   margin: 0;
   background-color: grey;
 }
-
+/* Image de fonds */
 .fondhangarempire{
   background-image: url("/src/img/Hangar.jpg");
 }
+
 .fondchasseurtie {
   position:relative;
   width: 100%;
@@ -17,6 +20,7 @@ body {
    
 }
 
+/* Image chasseur sur image de fonds*/
 .photochasseurtie {
   position: absolute;
   width: 70%;
@@ -26,6 +30,7 @@ body {
   justify-content: center;
 }
 
+/* Texte Chasseur Tie*/
 h1 {
   margin: 0;
 }
@@ -46,6 +51,7 @@ h1 {
   margin: 1rem;
 }
 
+/* Specificités chasseur Tie*/
 .specs {
   background-color: rgb(185, 189, 192);
   margin: 2rem;
@@ -60,4 +66,157 @@ h1 {
 
   .Pilotechasseurtie {
     display: none;
+  }
+
+/*Page Rebel ship*/
+/* Image de fonds */
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.fondhangarrebel{
+  background-image: url("/src/img/Hangar.jpg");
+}
+
+/* Image faucon sur image de fonds*/
+.fondfaucon {
+  position:relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.photofaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texte Faucon Millenium*/
+h1 {
+  margin: 0;
+}
+
+.fauconmillenium {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Noto Sans', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.fauconmillenium h1 {
+  text-align: center;
+}
+
+.fauconmillenium, h1, p {
+  margin: 1rem;
+}
+
+/* Specificités Faucon Millenium*/
+.specstext {
+  background-color: rgb(185, 189, 192);
+  margin: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 2rem;
+  
+  }
+
+  .specs h3{
+    text-align: center;
+  }
+
+  .Pilotefaucon {
+    display: none;
+  }
+
+  /* Footer*/
+  footer {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    padding: 16px;
+    background-color: black;
+    text-align: center;
+  }
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    min-width: 20em;
+    padding: 8px;
+    margin-top: 16px;
+  }
+  form label {
+    color: black;
+  }
+  form input,
+  form button {
+    width: 80%;
+  }
+  form input {
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  footer ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .footer-contact {
+    margin: 0 auto;
+  }
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .show-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+  .mobile-links {
+    display: none;
+  }
+  .logo img {
+    max-height: 2.5em;
+    max-width: 2.5em;
+  }
+  .fa {
+    color: black;
+  }
+  i.fa-eclipse {
+    min-width: 35px;
+    border: 1px solid red;
+    color: black;
+  }
+  
+  .comparison-boxes{
+      display: flex;
+      justify-content: center;
+      gap: 5rem;}
+  /*.fa-facebook,{}
+  .fa-twitter,{}*/
+  .fa-envelope {
+    margin-top: 16px;
+    padding: 16px;
+    color: white;
   }
