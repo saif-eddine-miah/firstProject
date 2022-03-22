@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/global.css" />
+    <script src="index.js" defer></script>
     <link
       rel="stylesheet"
-      href="style\desktop.css"
+      href="style/desktop.css"
       media="screen and (min-width: 992px)"
     />
     <link
@@ -17,7 +18,7 @@
     />
     <link
       rel="stylesheet"
-      href="style\global.css"
+      href="style/global.css"
       media="screen and (max-width: 580px)"
     />
     <link
@@ -50,7 +51,7 @@
       <div class="comparison-boxes">
         <div class="ship-box">
           <div class="select">
-            <select name="format" id="format">
+            <select name="format">
               <option selected disabled>Choose a ship !</option>
               <option value="Death-Star">Death Star</option>
               <option value="Radiant">Radiant VII</option>
@@ -63,7 +64,7 @@
 
         <div class="ship-box">
           <div class="select">
-            <select name="format" id="format">
+            <select name="format">
               <option selected disabled>Choose a ship !</option>
               <option value="Death-Star">Death Star</option>
               <option value="Radiant">Radiant VII</option>
@@ -85,30 +86,29 @@
     <div class="winner">
       <button>Winner</button>
     </div>
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="empire-ships.html">Empire</a></li>
+          <li><a href="rebel-ships.html">Rebels</a></li>
+          <li><a href="comparison.html">Comparateur</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <form action="post">
+          <label for="formNom">Nom</label>
+          <input id="formNom" type="text" />
+          <label for="formMail">Mail</label>
+          <input id="formMail" type="text" />
+          <button id="form-button">Envoyer</button>
+        </form>
+      </div>
+      <div class="footer-social">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-links">
-      <ul>
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="empire-ships.html">Empire</a></li>
-        <li><a href="rebel-ships.html">Rebels</a></li>
-        <li><a href="comparison.html">Comparateur</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <form action="">
-        <label for="formNom">Nom</label>
-        <input id="formNom" type="text" />
-        <label for="formMail">Mail</label>
-        <input id="formMail" type="text" />
-        <button id="form-button">Envoyer</button>
-      </form>
-    </div>
-    <div class="footer-social">
-      <i class="fa-brands fa-facebook fa-2x"></i>
-      <i class="fa-brands fa-twitter fa-2x"></i>
-      <i class="fa-solid fa-envelope fa-2x"></i>
-    </div>
-  </footer>
-  <script src="index.js" defer></script>
 </html>
