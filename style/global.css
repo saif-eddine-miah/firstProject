@@ -309,7 +309,7 @@ select::-ms-expand {
   line-height: 2.3;
   background: #4d4d4d;
   overflow: hidden;
-  border-radius: 0.25em;
+  border-radius: .25em;
 }
 .select::after {
   content: "\25BC";
@@ -327,7 +327,8 @@ select::-ms-expand {
 }
 
 .top-page {
-  background-image: url("/src/img/battle-background.jpeg");
+  background-image: url("/src/img/battle-background.jpg");
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -513,3 +514,14 @@ p {
   .specs h3{
     text-align: center;
   }
+
+  
+
+#id_img_empire{
+  max-height: 10rem;
+  max-width: 10rem;
+}
+#id_img_rebel{
+  max-height: 10rem;
+  max-width: 10rem;
+}

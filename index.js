@@ -115,7 +115,7 @@ const rebelShipsArray = [
     cost : "190 000 Crédits"
   }
 ]
-showSlides(slideIndex);
+//showSlides(slideIndex);
 
 
 function plusSlides(n) {
@@ -147,3 +147,13 @@ function showSlides(n) {
     const specCost = document.getElementById("spec-cost");
     specCost.textContent = empireShipsArray[slideIndex -1].cost;
   }
+document.getElementById("empire-select").addEventListener("change",function(event){
+  console.log(event);
+  let key=event.target.value;
+document.getElementById('id_img_empire').src = 'src/img/EmpireImage/' + key + '.png';
+})
+document.getElementById("rebel-select").addEventListener("change",function(event){
+  console.log(event);
+  let key=event.target.value;
+document.getElementById('id_img_rebel').src = 'src/img/RebelImage/' + key + '.png';
+})
