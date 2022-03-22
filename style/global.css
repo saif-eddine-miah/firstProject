@@ -336,6 +336,7 @@ select::-ms-expand {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-size: auto;
 }
 .bot-menu {
   /* Menu du bas accueil contenu */

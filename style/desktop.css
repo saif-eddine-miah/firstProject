@@ -96,6 +96,11 @@ nav {
 .kaaris-mdrrrr{
   font-size: 40px;
 }
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
+  
+  font-size: 35px;
+}
 h1 {
   margin: 0;
 }
@@ -240,6 +245,7 @@ form label {
 .fondhangarrebel {
   background-image: url("/src/img/Hangar.jpg");
 }
+
 
 /* Image faucon sur image de fonds*/
 .fondfaucon {

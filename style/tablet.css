@@ -19,6 +19,11 @@ nav {
 .kaaris-mdrrrr{
   font-size: 40px;
 }
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
+  
+  font-size: 25px;
+}
 .mobile-links {
   width: 80%;
   display: flex;
