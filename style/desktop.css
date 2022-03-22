@@ -1,7 +1,9 @@
-/*Page Empire ship*/
 body {
   margin: 0;
   background-color: #ced4da;
+}
+#test {
+  font-family: "soloist_extra-italicitalic";
 }
 nav {
   justify-items: center;
@@ -23,7 +25,7 @@ nav {
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "soloist_italicitalic";
   font-stretch: condensed;
   color: white;
   text-decoration: none;
@@ -114,7 +116,7 @@ p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 50%;
   width: auto;
   margin-top: -12px;
   padding: 16px;

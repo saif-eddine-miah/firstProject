@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "soloistregular";
+  src: url("fonts/soloist1-webfont.woff2") format("woff2"),
+    url("fonts/soloist1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_3dregular";
+  src: url("soloist3d-webfont.woff2") format("woff2"),
+    url("soloist3d-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_academyregular";
+  src: url("soloistacad-webfont.woff2") format("woff2"),
+    url("soloistacad-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_chromeregular";
+  src: url("soloistchrome-webfont.woff2") format("woff2"),
+    url("soloistchrome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_condensedcondensed";
+  src: url("soloistcond1-webfont.woff2") format("woff2"),
+    url("soloistcond1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_expandedexpanded";
+  src: url("soloistexpand1-webfont.woff2") format("woff2"),
+    url("soloistexpand1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_extra-italicitalic";
+  src: url("/fonts/soloistextraital1-webfont.woff2") format("woff2"),
+    url("/fonts/soloistextraital1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_gradientregular";
+  src: url("fonts/soloistgrad1-webfont.woff2") format("woff2"),
+    url("fonts/soloistgrad1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "soloist_halftoneregular";
+  src: url("soloisthalf-webfont.woff2") format("woff2"),
+    url("soloisthalf-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_halftoneregular";
+  src: url("soloisthalf1-webfont.woff2") format("woff2"),
+    url("soloisthalf1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_halftone_2regular";
+  src: url("soloisthalf21-webfont.woff2") format("woff2"),
+    url("soloisthalf21-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "soloist_italicitalic";
+  src: url("/fonts/soloistital1-webfont.woff2") format("woff2"),
+    url("/fonts/soloistital1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
