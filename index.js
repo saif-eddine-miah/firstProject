@@ -138,7 +138,8 @@ function showSlides(n) {
     const specClass = document.getElementById("spec-class");
     specClass.textContent = empireShipsArray[slideIndex -1].classe;
     const specConstruction = document.getElementById("spec-constructor");
-    specConstruction.textContent = empireShipsArray[slideIndex -1].construction;    const specLongeur = document.getElementById("spec-longeur");
+    specConstruction.textContent = empireShipsArray[slideIndex -1].construction;    
+    const specLongeur = document.getElementById("spec-longeur");
     specLongeur.textContent = empireShipsArray[slideIndex -1].length;
     const specLargeur = document.getElementById("spec-largeur");
     specLargeur.textContent = empireShipsArray[slideIndex -1].width;
