@@ -1,4 +1,7 @@
 :root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
   --main-bg-color: #c5c3c6;
   --primary-color: #282828;
   --secondary-color: #757575;
@@ -109,9 +112,10 @@ footer ul {
 .footer-contact {
   margin: 0 auto;
 }
-.topnav {
+.comparison-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
 }
 .show-links {
   display: flex;
@@ -262,12 +266,11 @@ div button {
 body {
   margin: 0;
 }
-nav {
-  background-color: transparent;
-}
-footer {
-  min-height: 20vh;
-  background-color: black;
+.bot-menu {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  -color: black;
 }
 .logo img {
   max-height: 2.5em;
@@ -338,15 +341,35 @@ select::-ms-expand {
   justify-content: center;
 }
 .bot-menu {
-  /* Menu du bas accueil conteneur */
+  /* Menu du bas accueil contenu */
   display: flex;
   flex-direction: column-reverse;
   color: yellow;
   align-items: center;
-  background-color: #777777c0;
+  background-color: #77777700;
   padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   margin: 0 0.5rem;
+  
+}
+.button-picture{
+  max-width: 10rem;
+  
+}
+@media(max-width: 607px)/* and(min-width:400) */{
+  .middle-button{
+    flex:0 0 100%;
+    order:2;
+  }
+}
+.kaaris-mdrrrr{
+  margin: auto 1rem;
+  margin-bottom: 2rem;
+  color:var(--accent-color);
+  background-color: #28282869;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  flex-basis: auto ;
 }
 
 .hero-1plan {
