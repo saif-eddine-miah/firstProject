@@ -91,6 +91,10 @@ nav {
 .welcome {
   position: absolute;
   left: 30%;
+  font-size: 70px;
+}
+.kaaris-mdrrrr{
+  font-size: 40px;
 }
 h1 {
   margin: 0;
