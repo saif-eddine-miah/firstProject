@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="style\desktop.css"
@@ -17,13 +11,19 @@
     />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 576px)"
-      href="style/global.css"
+      href="style\global.css"
+      media="screen and (max-width: 580px)"
     />
     <link
       rel="stylesheet"
-      media="screen and (min-width: 576px) and (max-width: 992px)"
-      href="style/tablet.css"
+      href="style\tablet.css"
+      media="screen and (max-width: 992px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -31,8 +31,9 @@
     />
     <title>Document</title>
   </head>
+
   <body>
-    <nav>
+    <nav class="fondhangarrebel">
       <div class="topnav">
         <a class="logo" href="accueil.html"
           ><img src="src/img/SWB.png" alt=""
@@ -51,6 +52,53 @@
         <a href="rebel-ships.html">REBEL</a>
       </div>
     </nav>
+    <div class="fondhangarrebel">
+      <div class="fondfaucon">
+        <div class="photofaucon">
+          <img
+            src="src\img\Faucon-Millenium.png"
+            alt="Photo Faucon Millenium"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="fauconmillenium">
+      <h1>Le Faucon Millenium</h1>
+      <p>
+        Le Faucon Millenium est un vaisseau cargo, d’une capacité de 100 tonnes
+        de fret, dont le modèle fut très répendu à la fin de la République
+        Galactique. Il dispose de deux moteurs subluminiques SRB42 lourdement
+        modifiés par ses propriétaires successifs et d’un Hyperdrive. Il peut
+        embarquer un équipage de six personnes (deux pilotes, deux navigateurs
+        et deux canonniers) ainsi que six passagers. Le Faucon Millenium a eu
+        des propriétaires célèbres tels que Lando Calrissian et Han Solo.
+      </p>
+    </div>
+
+    <div class="specs">
+      <div class="specstext">
+        <h3>Spécificités</h3>
+        <ul>
+          <li>Classe : Cargo</li>
+          <li>Construction : Corporation technique corellienne</li>
+          <li>Longueur : 34,75 mètres</li>
+          <li>Largeur : 25,61 mètres</li>
+          <li>Vitesse maximale atmosphérique : 1050 km/h</li>
+          <li>Indice de manoeuvrabilité : 70</li>
+          <li>Coût : A négocier avec Han Solo</li>
+          <br />
+        </ul>
+      </div>
+      <div class="Pilotefaucon">
+        <img
+          class="imgpilote"
+          src="src\img\han_solo_star_wars_7_ccexpress.png"
+          alt="Pilote Faucon"
+        />
+      </div>
+    </div>
+
     <footer>
       <div class="footer-links">
         <ul>
