@@ -1,4 +1,7 @@
 :root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
   --main-bg-color: #c5c3c6;
   --primary-color: #282828;
   --secondary-color: #757575;
@@ -110,10 +113,12 @@ footer ul {
 .footer-contact {
   margin: 0 auto;
 }
-.topnav {
+.comparison-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
 }
+/* il é ou saif ?? */
 .show-links {
   display: flex;
   flex-direction: column;
@@ -254,22 +259,17 @@ div button {
 }
 .bot-menu-cont {
   display: flex;
+  padding-bottom: 3rem;
 }
 .bot-menu {
   display: flex;
   flex-direction: column;
-  color: yellow;
+  color: var(--accent-color);
 }
 body {
   margin: 0;
 }
-nav {
-  background-color: transparent;
-}
-footer {
-  min-height: 20vh;
-  background-color: black;
-}
+
 .logo img {
   max-height: 2.5em;
   max-width: 2.5em;
@@ -337,17 +337,40 @@ select::-ms-expand {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-size: auto;
 }
 .bot-menu {
-  /* Menu du bas accueil conteneur */
+  /* Menu du bas accueil contenu */
   display: flex;
   flex-direction: column-reverse;
-  color: yellow;
+  color: var(--accent-color);
   align-items: center;
-  background-color: #777777c0;
+  background-color: #77777700;
   padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   margin: 0 0.5rem;
+  
+}
+.button-picture{
+  max-width: 10rem;
+  
+}
+@media(max-width: 607px)/* and(min-width:400) */{
+  .middle-button{
+    flex:0 0 100%;
+    order:2;
+  }
+}
+.kaaris-mdrrrr{
+  margin: auto 1rem;
+  margin-bottom: 10rem;
+  color:var(--accent-color);
+  background-color: #28282869;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  flex-basis: auto ;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-1plan {
@@ -355,7 +378,7 @@ select::-ms-expand {
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
-  height: 60rem;
+  height: 40rem;
   width: 90%;
   margin: auto 2rem;
 }
@@ -363,11 +386,13 @@ select::-ms-expand {
 .black-star {
   margin-left: -40rem;
   z-index: 0;
+  filter:brightness(75%);
+  position: absolute;
 }
 
 .welcome {
   max-width: 60%;
-  z-index: 1;
+  z-index: 1 ;
   flex-wrap: wrap;
   color: #ffe919;
   position: absolute;
