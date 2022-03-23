@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <script src="index.js" defer></script>
   </head>
@@ -63,24 +67,33 @@
           <div class="bot-menu">
             EMPIRE
             <a href="empire-ships.html"
-              ><img class="button-picture" src=src/img/Empire-Logo.png alt="Empire Logo"></a
+              ><img class="button-picture" src=src/img/Empire-Logo.png
+              alt="Empire Logo"></a
             >
           </div>
           <div class="bot-menu middle-button">
             COMPARISON
             <a href="comparison.html"
-              ><img class="button-picture" src=src/img/X-laser.png alt="crossed lasers"></a
+              ><img class="button-picture" src=src/img/X-laser.png alt="crossed
+              lasers"></a
             >
           </div>
           <div class="bot-menu">
             REBEL
             <a href="rebel-ships.html"
-              ><img class="button-picture" src=src/img/Alliance-Logo.png alt="Alliance Logo"></a
+              ><img class="button-picture" src=src/img/Alliance-Logo.png
+              alt="Alliance Logo"></a
             >
           </div>
         </div>
       </div>
     </div>
+    <img
+      class="divider-img"
+      src="src/img/triangleNegative(1).svg"
+      alt="triangle"
+      data-type="accueil"
+    />
     <footer>
       <div class="footer-links">
         <ul>
@@ -93,9 +106,11 @@
       <div class="footer-contact">
         <form action="post">
           <label for="formNom">Nom</label>
-          <input id="formNom" type="text" />
+          <input id="formNom" type="text" placeholder="Han Solo" />
           <label for="formMail">Mail</label>
-          <input id="formMail" type="text" />
+          <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
+          <label for="formMessage">Message</label>
+          <input id="formMessage" type="text" placeholder="Message" />
           <button id="form-button">Envoyer</button>
         </form>
       </div>
@@ -106,5 +121,4 @@
       </div>
     </footer>
   </body>
-  </html>
-  
+</html>
