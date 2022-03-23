@@ -161,7 +161,6 @@ p {
   background-color: #495057;
   color: white;
   width: 25rem;
-  
   border-radius: 2rem;
   font-family: "Noto Sans", sans-serif;
 }
@@ -293,6 +292,7 @@ form label {
   font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
+  
 }
 .fauconmillenium h1 {
   text-align: center;
@@ -303,7 +303,7 @@ form label {
 h1,
 p {
   padding: 1rem;
-  margin: 0rem;
+  margin: auto;
 }
 
 /* Specificités Faucon Millenium*/

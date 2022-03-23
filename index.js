@@ -196,3 +196,5 @@ function plusSlidesRebel(n) {
       const specPilot = document.querySelector(".imgpilote");
       specPilot.src = rebelShipsArray[slideIndexRebel -1].pilot;
     }
+
+    
