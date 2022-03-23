@@ -1,4 +1,4 @@
-const burgerLinks = document.querySelector(".mobile-links")
+const burgerLinks = document.querySelector(".mobile-links");
 
 function showBurgerMenu() {
   burgerLinks.classList.toggle("show-links");
@@ -10,7 +10,7 @@ function showBurgerMenu() {
   burgerLinks.classList.toggle("show-links");
   burgerLinks.classList.toggle("mobile-links");
 }
-let slideIndex = 1;
+
 const empireShipsArray = [
   {
     title : "Chasseur TIE",
@@ -126,43 +126,49 @@ const rebelShipsArray = [
   }
 ]
 
-let slideIndexRebel = 1;
-showSlides(slideIndex);
+let slideIndexEmpire = 1;
+showSlides(1);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndexEmpire += n);
 }
+
+specPageTitle.textContent = empireShipsArray[slideIndexEmpire -1].title;
 
 function showSlides(n) {
   let i = 0;
   let slides = document.getElementsByClassName("slides");
-  if (n > slides.length) {slideIndex = 1};
-  if (n < 1) {slideIndex = slides.length};
+  if (n > slides.length) {slideIndexEmpire = 1};
+  if (n < 1) {slideIndexEmpire = slides.length};
     for (let i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block"; 
+    slides[slideIndexEmpire-1].style.display = "block"; 
     const specPageTitle = document.getElementById("spec-page-title");
-    specPageTitle.textContent = empireShipsArray[slideIndex -1].title;
+    specPageTitle.textContent = empireShipsArray[slideIndexEmpire -1].title;
     const specPageDesc = document.getElementById("spec-page-desc");
-    specPageDesc.textContent = empireShipsArray[slideIndex -1].description;
+    specPageDesc.textContent = empireShipsArray[slideIndexEmpire -1].description;
     const specClass = document.getElementById("spec-class");
-    specClass.textContent = empireShipsArray[slideIndex -1].classe;
+    specClass.textContent = empireShipsArray[slideIndexEmpire -1].classe;
     const specConstruction = document.getElementById("spec-constructor");
-    specConstruction.textContent = empireShipsArray[slideIndex -1].construction;    
+    specConstruction.textContent = empireShipsArray[slideIndexEmpire -1].construction;    
     const specLongeur = document.getElementById("spec-longeur");
-    specLongeur.textContent = empireShipsArray[slideIndex -1].length;
+    specLongeur.textContent = empireShipsArray[slideIndexEmpire -1].length;
     const specLargeur = document.getElementById("spec-largeur");
-    specLargeur.textContent = empireShipsArray[slideIndex -1].width;
+    specLargeur.textContent = empireShipsArray[slideIndexEmpire -1].width;
     const specSpeed = document.getElementById("spec-speed");
-    specSpeed.textContent = empireShipsArray[slideIndex -1].maxSpeed;
+    specSpeed.textContent = empireShipsArray[slideIndexEmpire -1].maxSpeed;
     const specCost = document.getElementById("spec-cost");
-    specCost.textContent = empireShipsArray[slideIndex -1].cost;
+    specCost.textContent = empireShipsArray[slideIndexEmpire -1].cost;
     const specPilot = document.querySelector(".imgpilote");
-    specPilot.src = empireShipsArray[slideIndex -1].pilot;
+    specPilot.src = empireShipsArray[slideIndexEmpire -1].pilot;
     }
 
-  showSlidesRebel(slideIndexRebel);
+    
+    let slideIndexRebel = 1;
+showSlidesRebel(slideIndexRebel);
+
+
 
 
 function plusSlidesRebel(n) {

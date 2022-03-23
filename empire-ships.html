@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
     <link
       rel="stylesheet"
-      href="style/desktop.css"
       media="screen and (min-width: 992px)"
+      href="style/desktop.css"
     />
     <link
       rel="stylesheet"
       media="screen and (min-width: 576px) and (max-width: 992px)"
       href="style/tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="style/global.css"
-      media="screen and (max-width: 580px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +26,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"
+    />
     <script src="index.js" defer></script>
+    <script src="swal.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
     <title>Vaisseaux de l'Empire</title>
   </head>
 
@@ -86,7 +89,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      </div>
+    </div>
     <div class="chasseurtie">
       <h1 id="spec-page-title">Le chasseur TIE</h1>
       <p id="spec-page-desc">
@@ -140,14 +143,14 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <form action="post">
+        <form>
           <label for="formNom">Nom</label>
           <input id="formNom" type="text" placeholder="Han Solo" />
           <label for="formMail">Mail</label>
           <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
           <label for="formMessage">Message</label>
           <input id="formMessage" type="text" placeholder="Message" />
-          <button id="form-button">Envoyer</button>
+          <a id="form-button">Envoyer</a>
         </form>
       </div>
       <div class="footer-social">

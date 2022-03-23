@@ -287,9 +287,6 @@ p {
   justify-content: center;
 }
 .fondhangarrebel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
 }
 .fondhangarrebel nav {
