@@ -13,6 +13,9 @@ nav {
 .logo img {
   max-height: 6em;
 }
+.hero-1plan {
+  height: 40rem;
+}
 .burger-icon {
   display: none;
 }
@@ -94,6 +97,8 @@ nav {
 }
 .kaaris-mdrrrr{
   font-size: 40px;
+  text-align: -webkit-center;
+  
 }
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */

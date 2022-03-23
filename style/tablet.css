@@ -13,6 +13,12 @@ nav {
 .logo img {
   max-height: 6em;
 }
+.hero-1plan {
+  height: 45rem;
+}
+.welcome {
+  font-size: 50px;
+}
 .black-star {
   margin-left: -40rem;
 }
@@ -33,7 +39,7 @@ nav {
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif; /* nique ta mere */
   font-stretch: condensed;
   color: white;
   text-decoration: none;
