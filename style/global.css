@@ -10,10 +10,12 @@ body {
   /* width: 100vw;
   overflow-x:hidden ; */
 }
+
 nav {
   padding: 8px;
   background-color: transparent;
 }
+
 footer {
   justify-content: center;
   display: flex;
@@ -23,6 +25,7 @@ footer {
   background-color: black;
   text-align: center;
 }
+
 form {
   align-items: center;
   display: flex;
@@ -33,28 +36,34 @@ form {
   padding: 8px;
   margin-top: 16px;
 }
+
 form label {
   color: black;
 }
+
 form input,
 form button {
   width: 80%;
 }
+
 form input {
   border: 2px solid black;
   padding: 8px;
   border-radius: 8px;
 }
+
 footer ul li a {
   color: white;
   list-style: none;
   text-decoration: none;
 }
+
 footer ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -70,20 +79,24 @@ footer ul {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
   color: white;
 }
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -92,6 +105,7 @@ footer ul {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -107,26 +121,32 @@ footer ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .footer-contact {
   margin: 0 auto;
 }
+
 .topnav {
   display: flex;
   justify-content: space-between;
 }
+
 .show-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
 }
+
 .mobile-links {
   display: none;
 }
+
 .show-links a {
   color: white;
   text-decoration: none;
 }
+
 .logo img {
   max-height: 2.5em;
   max-width: 2.5em;
@@ -141,11 +161,13 @@ i.fa-eclipse {
   justify-content: center;
   gap: 5rem;
 }
+
 .fa-envelope {
   margin-top: 16px;
   padding: 16px;
   color: white;
 }
+
 .comparison-boxes {
   display: flex;
   justify-content: center;
@@ -183,6 +205,7 @@ i.fa-eclipse {
   background-color: var(--secondary-color);
   border-radius: 1rem;
 }
+
 .ship-box {
   width: 10rem;
   height: 12rem;
@@ -191,6 +214,7 @@ i.fa-eclipse {
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 3rem;
 }
+
 .spec {
   display: flex;
   justify-content: center;
@@ -218,6 +242,7 @@ i.fa-eclipse {
   display: flex;
   justify-content: center;
 }
+
 .battle {
   background-color: #ededed;
   border-radius: 28px;
@@ -234,6 +259,7 @@ i.fa-eclipse {
   display: flex;
   justify-content: center;
 }
+
 div button {
   background-color: #ededed;
   border-radius: 28px;
@@ -244,6 +270,7 @@ div button {
   padding: 16px 31px;
   text-shadow: 0px 1px 0px #ffffff;
 }
+
 #form-button {
   background-color: var(--accent-color);
   color: black;
@@ -252,31 +279,39 @@ div button {
   width: 40%;
   border-radius: 25px;
 }
+
 .bot-menu-cont {
   display: flex;
 }
+
 .bot-menu {
   display: flex;
   flex-direction: column;
   color: yellow;
 }
+
 body {
   margin: 0;
 }
+
 nav {
   background-color: transparent;
 }
+
 footer {
   min-height: 20vh;
   background-color: black;
 }
+
 .logo img {
   max-height: 2.5em;
   max-width: 2.5em;
 }
+
 .fa {
   color: #ffe919;
 }
+
 .background-div {
   flex-direction: column;
   align-items: center;
@@ -299,9 +334,11 @@ select {
   font-size: 0.7rem;
   font-family: "Open Sans", sans-serif;
 }
+
 select::-ms-expand {
   display: none;
 }
+
 .select {
   position: relative;
   display: flex;
@@ -312,6 +349,7 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: 0.25em;
 }
+
 .select::after {
   content: "\25BC";
   position: absolute;
@@ -323,6 +361,7 @@ select::-ms-expand {
   pointer-events: none;
   transition: 0.25s all ease;
 }
+
 .select:hover::after {
   color: #fffb00;
 }
@@ -332,12 +371,14 @@ select::-ms-expand {
   width: 100%;
   height: 100%;
 }
+
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .bot-menu {
   /* Menu du bas accueil conteneur */
   display: flex;
@@ -376,7 +417,6 @@ select::-ms-expand {
 
 .fondhangarrebel {
   background-image: url("/src/img/Hangar.jpg");
-  
 }
 
 .fondfaucon {
@@ -412,6 +452,7 @@ h1 {
   font-size: medium;
   text-align: justify;
 }
+
 .fauconmillenium h1 {
   text-align: center;
 }
@@ -463,12 +504,15 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .number-text {
   color: white;
 }
+
 .slides {
   text-align: center;
 }
+
 .slides img {
   max-width: 100%;
 }
@@ -486,6 +530,7 @@ h1 {
   font-size: medium;
   text-align: justify;
 }
+
 .chasseurtie h1 {
   text-align: center;
 }
@@ -503,15 +548,18 @@ p {
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
 }
+
 .Pilotechasseurtie {
   display: none;
 }
+
 .burger-positioning {
   position: absolute;
   left: 0;
   right: 0;
   min-height: 1vh;
 }
+
 .specs h3 {
   text-align: center;
 }

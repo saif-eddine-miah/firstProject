@@ -2,26 +2,32 @@
   scroll-behavior: smooth;
   margin: 0;
 }
+
 nav {
   justify-items: center;
   align-content: center;
   display: grid;
 }
+
 .burger-icon {
   display: none;
 }
+
 .logo img {
   max-height: 6em;
 }
+
 .black-star {
   margin-left: -40rem;
 }
+
 .mobile-links {
   width: 80%;
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
+
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
@@ -37,11 +43,13 @@ nav {
   background-position: 100%;
   transition: background-position 275ms ease;
 }
+
 .mobile-links a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
 }
+
 footer {
   justify-content: center;
   display: flex;
@@ -51,6 +59,7 @@ footer {
   background-color: black;
   text-align: center;
 }
+
 form {
   align-items: center;
   display: flex;
@@ -61,31 +70,38 @@ form {
   padding: 8px;
   margin-top: 16px;
 }
+
 form label {
   color: black;
 }
+
 form input,
 form button {
   width: 80%;
 }
+
 form input {
   border: 2px solid black;
   padding: 8px;
   border-radius: 8px;
 }
+
 footer ul li a {
   color: white;
   list-style: none;
   text-decoration: none;
 }
+
 footer ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 .footer-contact {
   margin: 0 auto;
 }
+
 #form-button {
   background-color: var(--accent-color);
   color: black;
@@ -94,6 +110,7 @@ footer ul {
   width: 40%;
   border-radius: 25px;
 }
+
 .fa-facebook,
 .fa-twitter,
 .fa-envelope {
@@ -101,13 +118,16 @@ footer ul {
   padding: 16px;
   color: white;
 }
+
 body {
   margin: 0;
   /* background-color: grey; */
 }
+
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
 }
+
 .fondchasseurtie {
   position: relative;
   margin: 0 auto;
@@ -118,6 +138,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 /* Image chasseur sur image de fonds*/
 .photochasseurtie {
   position: absolute;
@@ -141,6 +162,7 @@ h1 {
   font-size: medium;
   text-align: justify;
 }
+
 .chasseurtie h1 {
   text-align: center;
 }
@@ -156,14 +178,17 @@ p {
   padding: 2rem;
   background-color: #ced4da;
 }
+
 .slides img {
   max-width: 100%;
 }
+
 .specstext {
   background-color: rgb(185, 189, 192);
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -179,26 +204,32 @@ p {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
   color: white;
 }
+
 .specs h3 {
   text-align: center;
 }
+
 .Pilotechasseurtie {
   display: none;
 }
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -207,6 +238,7 @@ p {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -219,6 +251,7 @@ p {
 .Pilotechasseurtie {
   display: none;
 }
+
 /* Image faucon sur image de fonds*/
 .fondfaucon {
   position: relative;
@@ -238,12 +271,14 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .fondhangarrebel {
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
 }
+
 .fondhangarrebel nav {
   min-width: 100%;
 }
@@ -257,6 +292,7 @@ p {
   font-size: medium;
   text-align: justify;
 }
+
 .fauconmillenium h1 {
   text-align: center;
 }
@@ -271,23 +307,28 @@ p {
 .Pilotefaucon {
   display: none;
 }
+
 .topnav {
   display: flex;
   justify-content: space-between;
 }
+
 .show-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
 }
+
 .logo img {
   max-height: 2.5em;
   max-width: 2.5em;
 }
+
 .fa {
   color: black;
 }
+
 i.fa-eclipse {
   min-width: 35px;
   border: 1px solid red;
@@ -299,6 +340,7 @@ i.fa-eclipse {
   justify-content: center;
   gap: 5rem;
 }
+
 /*.fa-facebook,{}
   .fa-twitter,{}*/
 .fa-envelope {

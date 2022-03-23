@@ -2,26 +2,32 @@ body {
   margin: 0;
   background-color: #ced4da;
 }
+
 #test {
-  font-family: "soloist_extra-italicitalic";
+  font-family: "soloist_extra-italicitalic, sans-serif";
 }
+
 nav {
   justify-items: center;
   align-content: center;
   display: grid;
 }
+
 .logo img {
   max-height: 6em;
 }
+
 .burger-icon {
   display: none;
 }
+
 .mobile-links {
   width: 80%;
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
+
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
@@ -37,11 +43,13 @@ nav {
   background-position: 100%;
   transition: background-position 275ms ease;
 }
+
 .mobile-links a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
 }
+
 .fondchasseurtie {
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
   position: relative;
@@ -54,6 +62,7 @@ nav {
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
 }
+
 .fondchasseurtie {
   position: relative;
   width: 100%;
@@ -73,6 +82,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .slides {
   display: flex;
   flex-direction: column;
@@ -80,20 +90,25 @@ nav {
   justify-content: center;
   max-width: 50%;
 }
+
 .slides img {
   max-height: 100%;
   max-width: 100%;
 }
+
 .black-star {
   margin-left: auto;
 }
+
 .welcome {
   position: absolute;
   left: 30%;
 }
+
 h1 {
   margin: 0;
 }
+
 .chasseurtie {
   background-color: #ced4da;
   color: black;
@@ -103,6 +118,7 @@ h1 {
   font-size: medium;
   text-align: justify;
 }
+
 .chasseurtie h1 {
   text-align: center;
 }
@@ -112,6 +128,7 @@ h1,
 p {
   margin: 2rem;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -127,14 +144,17 @@ p {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
   color: white;
 }
+
 .specs {
   padding: 2rem;
   display: flex;
@@ -163,13 +183,16 @@ p {
   width: 30rem;
   height: 15rem;
 }
+
 .Pilotechasseurtie {
   max-width: 100%;
 }
+
 .specs.specstext h3 {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
 }
+
 footer {
   justify-content: space-evenly;
   align-items: center;
@@ -180,21 +203,25 @@ footer {
   background-color: black;
   text-align: center;
 }
+
 footer ul li a {
   color: white;
   list-style: none;
   text-decoration: none;
 }
+
 footer ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 footer form {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
+
 #form-button {
   border: 2px solid white;
   background-color: var(--accent-color);
@@ -204,17 +231,20 @@ footer form {
   width: 100%;
   border-radius: 25px;
 }
+
 i.fa-brands,
 i.fa-solid,
 form label {
   color: white;
 }
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -223,6 +253,7 @@ form label {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -231,6 +262,7 @@ form label {
     opacity: 1;
   }
 }
+
 /*Page Rebel ship*/
 /* Image de fonds */
 .fondhangarrebel {
@@ -239,15 +271,18 @@ form label {
   justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
 }
+
 .fondhangarrebel nav {
   min-width: 100%;
 }
+
 .topnav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .slides {
   max-width: 30%;
 }
@@ -278,6 +313,7 @@ form label {
   font-size: medium;
   text-align: justify;
 }
+
 .fauconmillenium h1 {
   text-align: center;
   margin: 0;
@@ -294,6 +330,7 @@ p {
 .specs h3 {
   text-align: center;
 }
+
 .specs.specstext h3 {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
