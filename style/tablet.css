@@ -1,3 +1,11 @@
+:root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
+  --main-bg-color: #c5c3c6;
+  --primary-color: #282828;
+  --secondary-color: #757575;
+}
 * {
   scroll-behavior: smooth;
   margin: 0;
