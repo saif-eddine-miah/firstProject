@@ -133,7 +133,7 @@ function plusSlides(n) {
   showSlides(slideIndexEmpire += n);
 }
 
-specPageTitle.textContent = empireShipsArray[slideIndexEmpire -1].title;
+
 
 function showSlides(n) {
   let i = 0;
