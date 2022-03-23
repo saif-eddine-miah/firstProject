@@ -1,22 +1,169 @@
+:root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
+  --main-bg-color: #c5c3c6;
+  --primary-color: #282828;
+  --secondary-color: #757575;
+}
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+nav {
+  justify-items: center;
+  align-content: center;
+  display: grid;
+}
+.burger-icon {
+  display: none;
+}
+.logo img {
+  max-height: 6em;
+}
+.black-star {
+  margin-left: -40rem;
+}
+.kaaris-mdrrrr {
+  font-size: 40px;
+}
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
+
+  font-size: 25px;
+}
+.mobile-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.mobile-links a {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "soloist_italicitalic";
+  font-stretch: condensed;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, #ffe919, #ffe919 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.mobile-links a:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-position: 0 100%;
+}
+.divider-img {
+  margin: -5px;
+}
+footer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+  padding: 16px;
+  background-color: black;
+  text-align: center;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  min-width: 20em;
+  padding: 8px;
+  margin-top: 16px;
+}
+form label {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+}
+form input,
+form button {
+  width: 80%;
+}
+form input {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 8px;
+}
+footer ul li a {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: var(--accent-color);
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-contact {
+  margin: 0 auto;
+}
+#form-button {
+  background-color: var(--accent-color);
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  width: 40%;
+  border-radius: 25px;
+}
+#form-button:hover {
+  border: 0 solid white;
+  border-width: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
+.fa-facebook,
+.fa-twitter,
+.fa-envelope {
+  margin-top: 16px;
+  padding: 16px;
+  color: white;
+}
+i.fa-brands:hover,
+i.fa-solid:hover,
+form label:hover {
+  color: var(--accent-color);
+}
 body {
   margin: 0;
-  background-color: grey;
+  background-color: #ced4da;
 }
-
-.fondhangarempire{
+.fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
 }
 .fondchasseurtie {
-  position:relative;
-  width: 100%;
-  height: 30rem;
-  padding: 5px; 
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  height: 40rem;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-   
 }
-
+/* Image chasseur sur image de fonds*/
 .photochasseurtie {
   position: absolute;
   width: 70%;
@@ -26,15 +173,16 @@ body {
   justify-content: center;
 }
 
+/* Texte Chasseur Tie*/
 h1 {
   margin: 0;
 }
 
 .chasseurtie {
-  background-color: grey;
-  margin: 0%;
-  padding: 0%;
-  font-family:'Noto Sans', sans-serif;
+  background-color: #ced4da;
+  margin: 0;
+  padding: 2rem;
+  font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
 }
@@ -42,22 +190,167 @@ h1 {
   text-align: center;
 }
 
-.chasseurtie, h1, p {
+.chasseurtie,
+h1,
+p {
   margin: 1rem;
 }
 
+/* Specificités chasseur Tie*/
 .specs {
-  background-color: rgb(185, 189, 192);
-  margin: 2rem;
-  font-family: 'Noto Sans', sans-serif;
+  padding: 2rem;
+  background-color: #ced4da;
+}
+.slides img {
+  max-width: 100%;
+}
+.specstext {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.5rem;
+  font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
-  
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -12px;
+  padding: 16px;
+  color: #ffe919;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: white;
+}
+.specs h3 {
+  text-align: center;
+}
+.Pilotechasseurtie {
+  display: none;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-  .specs h3{
-    text-align: center;
-  }
+.Pilotechasseurtie {
+  display: none;
+}
+/* Image faucon sur image de fonds*/
+.fondfaucon {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Pilotechasseurtie {
-    display: none;
-  }
+.photofaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fondhangarrebel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/src/img/Hangar.jpg");
+}
+.fondhangarrebel nav {
+  min-width: 100%;
+}
+
+/* Texte Faucon Millenium*/
+.fauconmillenium {
+  background-color: grey;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.fauconmillenium h1 {
+  text-align: center;
+}
+
+.fauconmillenium,
+h1,
+p {
+  margin: 1rem;
+}
+
+/* Specificités Faucon Millenium*/
+.Pilotefaucon {
+  display: none;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+.show-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+.logo img {
+  max-height: 2.5em;
+  max-width: 2.5em;
+}
+.fa {
+  color: black;
+}
+i.fa-eclipse {
+  min-width: 35px;
+  border: 1px solid red;
+  color: black;
+}
+
+.comparison-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+/*.fa-facebook,{}
+  .fa-twitter,{}*/
+.fa-envelope {
+  margin-top: 16px;
+  padding: 16px;
+  color: white;
+}
