@@ -151,12 +151,17 @@ p {
   gap: 10rem;
 }
 
+.specs div{
+  max-height: 20rem;
+
+}
+
 .specstext {
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
   background-color: #495057;
   color: white;
   width: 25rem;
-  height: auto;
+  
   border-radius: 2rem;
   font-family: "Noto Sans", sans-serif;
 }
@@ -166,12 +171,13 @@ p {
 }
 
 .imgpilote {
+  max-height: 100%;
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
   background-color: #495057;
   border-radius: 2rem;
-  width: 30rem;
-  height: 15rem;
+   max-width: 25rem;
 }
+
 .Pilotechasseurtie {
   max-width: 100%;
 }
