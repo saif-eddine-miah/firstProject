@@ -59,13 +59,12 @@ nav {
 .fondchasseurtie {
   position: relative;
   width: 100%;
-  height: 30rem;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
-  height: 40rem;
+  height: 30rem;
 }
 
 /* Image chasseur sur image de fonds*/
@@ -129,7 +128,7 @@ p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   margin-top: -12px;
   padding: 16px;
@@ -240,6 +239,10 @@ footer form {
 .divider-img {
   margin: -5px;
 }
+.divider-img[data-type="accueil"] {
+  background-color: transparent;
+  margin: -5px;
+}
 i.fa-brands,
 i.fa-solid,
 form label {
@@ -278,16 +281,11 @@ form label:hover {
 /*Page Rebel ship*/
 /* Image de fonds */
 .fondhangarrebel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
   background-attachment: fixed;
 }
 .fondhangarrebel nav {
   min-width: 100%;
-}
-.fondfaucon {
 }
 .topnav {
   display: flex;
@@ -300,8 +298,20 @@ form label:hover {
 }
 
 /* Image faucon sur image de fonds*/
-.fondfaucon {
+.fond-container-faucon {
+  position: relative;
+  width: 100%;
+  height: 30rem;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+}
+.fondfaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;

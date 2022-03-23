@@ -141,6 +141,10 @@ footer ul {
   display: none;
 }
 .show-links a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "soloist_italicitalic";
+  font-stretch: condensed;
   color: white;
   text-decoration: none;
 }
@@ -358,6 +362,8 @@ select::-ms-expand {
 }
 
 .topnav {
+  padding: 0.5rem;
+  display: flex;
   justify-content: space-between;
 }
 
