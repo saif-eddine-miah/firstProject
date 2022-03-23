@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/fonts.css" />
     <link
       rel="stylesheet"
       href="style/desktop.css"
@@ -16,8 +17,8 @@
     />
     <link
       rel="stylesheet"
+      media="screen and (min-width: 576px) and (max-width: 992px)"
       href="style/tablet.css"
-      media="screen and (max-width: 992px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,39 +35,67 @@
   </head>
 
   <body>
-    <nav class="fondhangarrebel">
-      <div class="topnav">
-        <a class="logo" href="accueil.html"
-          ><img src="src/img/SWB.png" alt=""
-        /></a>
-        <a
-          href="javascript:void(0)"
-          class="burger-icon"
-          onclick="showBurgerMenu()"
-        >
-          <i class="fa fa-bars fa-2x"></i
-        ></a>
-      </div>
-      <div class="mobile-links">
-        <a href="empire-ships.html">EMPIRE</a>
-        <a href="comparison.html">COMPARISON</a>
-        <a href="rebel-ships.html">REBEL</a>
-      </div>
-    </nav>
     <div class="fondhangarrebel">
-      <div class="fondfaucon">
-        <div class="photofaucon">
+      <nav>
+        <div class="topnav">
+          <a class="logo" href="accueil.html"
+            ><img src="src/img/SWB.png" alt=""
+          /></a>
+          <a
+            href="javascript:void(0)"
+            class="burger-icon"
+            onclick="showBurgerMenu()"
+          >
+            <i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+        <div class="mobile-links">
+          <a href="empire-ships.html">EMPIRE &nbsp;</a>
+          <a href="comparison.html">COMPARISON &nbsp;</a>
+          <a href="rebel-ships.html">REBEL &nbsp;</a>
+        </div>
+      </nav>
+    </div>
+    <div class="slideshow-container">
+      <div class="fondhangarrebel">
+        <div class="fondfaucon slides fade">
+          <img
+            src="src\img\Faucon-Millenium.png"
+            alt="Photo Faucon Millenium"
+          />
+        </div>
+        <div class="slides fade">
+          <img
+            src="src\img\Faucon-Millenium.png"
+            alt="Photo Faucon Millenium"
+          />
+        </div>
+        <div class="slides fade">
+          <img
+            src="src\img\Faucon-Millenium.png"
+            alt="Photo Faucon Millenium"
+          />
+        </div>
+        <div class="slides fade">
+          <img
+            src="src\img\Faucon-Millenium.png"
+            alt="Photo Faucon Millenium"
+          />
+        </div>
+        <div class="slides fade">
           <img
             src="src/img/Faucon-Millenium.png"
             alt="Photo Faucon Millenium"
           />
         </div>
       </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="fauconmillenium">
-      <h1>Le Faucon Millenium</h1>
-      <p>
+      <h1 id="spec-page-title">Le Faucon Millenium</h1>
+      <p id="spec-page-desc">
         Le Faucon Millenium est un vaisseau cargo, d’une capacité de 100 tonnes
         de fret, dont le modèle fut très répendu à la fin de la République
         Galactique. Il dispose de deux moteurs subluminiques SRB42 lourdement
@@ -81,14 +110,14 @@
       <div class="specstext">
         <h3>Spécificités</h3>
         <ul>
-          <li>Classe : Cargo</li>
-          <li>Construction : Corporation technique corellienne</li>
-          <li>Longueur : 34,75 mètres</li>
-          <li>Largeur : 25,61 mètres</li>
-          <li>Vitesse maximale atmosphérique : 1050 km/h</li>
-          <li>Indice de manoeuvrabilité : 70</li>
-          <li>Coût : A négocier avec Han Solo</li>
-          
+          <li id="spec-class">Classe : Cargo</li>
+          <li id="spec-constructor">
+            Construction : Corporation technique corellienne
+          </li>
+          <li id="spec-longeur">Longueur : 34,75 mètres</li>
+          <li id="spec-largeur">Largeur : 25,61 mètres</li>
+          <li id="spec-speed">Vitesse maximale atmosphérique : 1050 km/h</li>
+          <li id="spec-cost">Coût : A négocier avec Han Solo</li>
         </ul>
       </div>
       <div class="Pilotefaucon">

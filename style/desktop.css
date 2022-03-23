@@ -1,7 +1,9 @@
-/*Page Empire ship*/
 body {
   margin: 0;
   background-color: #ced4da;
+}
+#test {
+  font-family: "soloist_extra-italicitalic";
 }
 nav {
   justify-items: center;
@@ -23,7 +25,7 @@ nav {
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "soloist_italicitalic";
   font-stretch: condensed;
   color: white;
   text-decoration: none;
@@ -40,15 +42,12 @@ nav {
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
 }
-.fondhangarempire {
-  background-image: url("/src/img/Hangar.jpg");
-}
 .fondchasseurtie {
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
   position: relative;
   height: 40rem;
   padding: 5px;
-  background-color: #a8b7ab;
+  /* background-color: #a8b7ab; */
 }
 
 /* Image de fonds */
@@ -126,7 +125,7 @@ p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 50%;
   width: auto;
   margin-top: -12px;
   padding: 16px;
@@ -146,6 +145,7 @@ p {
   color: white;
 }
 .specs {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   gap: 10rem;
@@ -243,15 +243,27 @@ form label {
 /*Page Rebel ship*/
 /* Image de fonds */
 .fondhangarrebel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
+}
+.fondhangarrebel nav {
+  min-width: 100%;
+}
+.topnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slides {
+  max-width: 30%;
 }
 
 
 /* Image faucon sur image de fonds*/
 .fondfaucon {
-  position: relative;
-  width: 100%;
-  height: 30rem;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -269,7 +281,7 @@ form label {
 
 /* Texte Faucon Millenium*/
 .fauconmillenium {
-  background-color: grey;
+  background-color: #ced4da;
   margin: 0%;
   padding: 0%;
   font-family: "Noto Sans", sans-serif;
@@ -278,12 +290,14 @@ form label {
 }
 .fauconmillenium h1 {
   text-align: center;
+  margin: 0;
 }
 
 .fauconmillenium,
 h1,
 p {
-  margin: 1rem;
+  padding: 1rem;
+  margin: 0rem;
 }
 
 /* Specificités Faucon Millenium*/
