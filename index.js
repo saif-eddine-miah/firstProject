@@ -165,11 +165,9 @@ function showSlides(n) {
     }
 
     
-    let slideIndexRebel = 1;
+    
+let slideIndexRebel = 1;
 showSlidesRebel(slideIndexRebel);
-
-
-
 
 function plusSlidesRebel(n) {
   showSlidesRebel(slideIndexRebel += n);
