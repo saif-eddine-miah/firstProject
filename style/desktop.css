@@ -1,3 +1,11 @@
+:root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
+  --main-bg-color: #c5c3c6;
+  --primary-color: #282828;
+  --secondary-color: #757575;
+}
 body {
   margin: 0;
   background-color: #ced4da;
@@ -18,7 +26,7 @@ nav {
 }
 .mobile-links {
   width: 80%;
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   text-decoration: none;
 }
@@ -35,33 +43,28 @@ nav {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease;
+  transition: background-position 500ms ease;
 }
 .mobile-links a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
 }
-.fondchasseurtie {
-  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
-  position: relative;
-  height: 40rem;
-  padding: 5px;
-  /* background-color: #a8b7ab; */
-}
 
 /* Image de fonds */
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
+  background-attachment: fixed;
 }
 .fondchasseurtie {
   position: relative;
   width: 100%;
-  height: 30rem;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  height: 30rem;
 }
 
 /* Image chasseur sur image de fonds*/
@@ -92,12 +95,12 @@ nav {
   left: 30%;
   font-size: 70px;
 }
-.kaaris-mdrrrr{
+.kaaris-mdrrrr {
   font-size: 40px;
 }
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */
-  
+
   font-size: 35px;
 }
 h1 {
@@ -125,7 +128,7 @@ p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   margin-top: -12px;
   padding: 16px;
@@ -151,9 +154,8 @@ p {
   gap: 10rem;
 }
 
-.specs div{
+.specs div {
   max-height: 20rem;
-
 }
 
 .specstext {
@@ -174,7 +176,7 @@ p {
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
   background-color: #495057;
   border-radius: 2rem;
-   max-width: 25rem;
+  max-width: 25rem;
 }
 
 .Pilotechasseurtie {
@@ -185,19 +187,29 @@ p {
   font-family: "Noto Sans", sans-serif;
 }
 footer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 2rem;
   display: flex;
-  min-height: 20vh;
-  margin: 2rem 0 0 0;
-  padding: 16px;
+  padding: 0rem 5rem 0rem 5rem;
   background-color: black;
   text-align: center;
 }
+footer div {
+  min-width: 33%;
+}
 footer ul li a {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
   color: white;
   list-style: none;
   text-decoration: none;
+}
+footer ul li a:hover {
+  color: var(--accent-color);
 }
 footer ul {
   padding: 0;
@@ -205,23 +217,53 @@ footer ul {
   list-style-type: none;
 }
 footer form {
+  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 #form-button {
-  border: 2px solid white;
+  border: 2px solid black;
+  border-width: 5px;
   background-color: var(--accent-color);
-  color: white;
-  margin-top: 20px;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: blac;
+  margin-top: 25px;
   padding: 10px 10px;
-  width: 100%;
+  max-width: 100%;
   border-radius: 25px;
+}
+#form-button:hover {
+  border-width: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 0px -10px black, 0px -20px 0px -10px black,
+    20px 0px 0px -10px black, -20px 0px 0px -10px black,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: 0px 20px 0px -10px black, 0px -20px 0px -10px black,
+    20px 0px 0px -10px black, -20px 0px 0px -10px black,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
+.divider-img {
+  margin: -5px;
+}
+.divider-img[data-type="accueil"] {
+  background-color: transparent;
+  margin: -5px;
 }
 i.fa-brands,
 i.fa-solid,
 form label {
   color: white;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+i.fa-brands:hover,
+i.fa-solid:hover,
+form label:hover {
+  color: var(--accent-color);
 }
 .fade {
   -webkit-animation-name: fade;
@@ -248,10 +290,8 @@ form label {
 /*Page Rebel ship*/
 /* Image de fonds */
 .fondhangarrebel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
+  background-attachment: fixed;
 }
 .fondhangarrebel nav {
   min-width: 100%;
@@ -266,10 +306,21 @@ form label {
   max-width: 30%;
 }
 
-
 /* Image faucon sur image de fonds*/
-.fondfaucon {
+.fond-container-faucon {
+  position: relative;
+  width: 100%;
+  height: 30rem;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+}
+.fondfaucon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,8 +328,7 @@ form label {
 
 .photofaucon {
   position: absolute;
-  width: 70%;
-  height: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,3 +1,11 @@
+:root {
+  --accent-color: #ffe919;
+  --main-grey: #a8b7ab;
+  --main-blue: #9bbec7;
+  --main-bg-color: #c5c3c6;
+  --primary-color: #282828;
+  --secondary-color: #757575;
+}
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -21,12 +29,12 @@ nav {
 .black-star {
   margin-left: -40rem;
 }
-.kaaris-mdrrrr{
+.kaaris-mdrrrr {
   font-size: 40px;
 }
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */
-  
+
   font-size: 25px;
 }
 .mobile-links {
@@ -38,7 +46,7 @@ nav {
 .mobile-links a {
   font-size: 1.4rem;
   font-weight: 900;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "soloist_italicitalic";
   font-stretch: condensed;
   color: white;
   text-decoration: none;
@@ -54,6 +62,9 @@ nav {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
+}
+.divider-img {
+  margin: -5px;
 }
 footer {
   justify-content: center;
@@ -75,6 +86,9 @@ form {
   margin-top: 16px;
 }
 form label {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
   color: black;
 }
 form input,
@@ -87,9 +101,15 @@ form input {
   border-radius: 8px;
 }
 footer ul li a {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
   color: white;
   list-style: none;
   text-decoration: none;
+}
+footer ul li a:hover {
+  color: var(--accent-color);
 }
 footer ul {
   padding: 0;
@@ -103,9 +123,21 @@ footer ul {
   background-color: var(--accent-color);
   color: black;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 10px;
   width: 40%;
   border-radius: 25px;
+}
+#form-button:hover {
+  border: 0 solid white;
+  border-width: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
 }
 .fa-facebook,
 .fa-twitter,
@@ -114,9 +146,14 @@ footer ul {
   padding: 16px;
   color: white;
 }
+i.fa-brands:hover,
+i.fa-solid:hover,
+form label:hover {
+  color: var(--accent-color);
+}
 body {
   margin: 0;
-  /* background-color: grey; */
+  background-color: #ced4da;
 }
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
@@ -173,7 +210,10 @@ p {
   max-width: 100%;
 }
 .specstext {
-  background-color: rgb(185, 189, 192);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.5rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
 }
@@ -252,9 +292,6 @@ p {
   justify-content: center;
 }
 .fondhangarrebel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
 }
 .fondhangarrebel nav {
