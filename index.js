@@ -20,7 +20,8 @@ const empireShipsArray = [
     length : "6,3 Mètres",
     width : "6,4 Mètres",
     maxSpeed : "1200km/h",
-    cost : "60 000 Crédits"
+    cost : "60 000 Crédits",
+    pilot : "src/img/figurine-tie-fighter-pilot-backstabber-mouse-droid-exclusive-kotobukiya_ccexpress.png"
   },
   {
     title : "Intercepteur TIE",
@@ -30,7 +31,8 @@ const empireShipsArray = [
     length : "11,45 Mètres",
     width : "8,08 Mètres",
     maxSpeed : "1250km/h",
-    cost : "120 000 Crédits"
+    cost : "120 000 Crédits",
+    pilot : "src/img/pilot interceptor TIE.png"
   },
   {
     title : "Navette T-4a Lambda",
@@ -40,7 +42,8 @@ const empireShipsArray = [
     length : "20 Mètres",
     width : "22 Mètres",
     maxSpeed : "850km/h",
-    cost : "140 000 Crédits"
+    cost : "140 000 Crédits",
+    pilot : "src/img/Daco Pilote empire.png"
   },
   {
     title : "Navette de commande Upsilon",
@@ -50,7 +53,8 @@ const empireShipsArray = [
     length : "19,1 Mètres",
     width : "13,5 Mètres sans les ailes et 37,2 mètres",
     maxSpeed : "950km/h",
-    cost : "250 000 Crédits"
+    cost : "250 000 Crédits",
+    pilot : "src/img/most-elite-squad-in-the-galactic-empire-star-wars-at-at-pilot-person-human-astronaut-helmet-transparent-png-2584697.png"
   },
   {
     title : "Voilier Solaire Punworcca 116",
@@ -60,7 +64,8 @@ const empireShipsArray = [
     length : "15,2 Mètres",
     width : "4,6 Mètres",
     maxSpeed : "1600km/h",
-    cost : "35 000 Crédits sans voile"
+    cost : "35 000 Crédits sans voile",
+    pilot : "src/img/Count Dooku.png"
   }
 ]
 const rebelShipsArray = [
@@ -72,7 +77,8 @@ const rebelShipsArray = [
     length : "34,52 Mètres",
     width : "25,61 Mètres",
     maxSpeed : "1050km/h",
-    cost : "A négocier avec Han Solo"
+    cost : "A négocier avec Han Solo",
+    pilot : "src/img/han_solo_star_wars_7_ccexpress.png"
   },
   {
     title : "Chasseur Jedi",
@@ -82,7 +88,8 @@ const rebelShipsArray = [
     length : "5,47 Mètres",
     width : "4,3 Mètres",
     maxSpeed : "1500km/h",
-    cost : "320 000 Crédits"
+    cost : "320 000 Crédits",
+    pilot : "src/img/Attico_Wred.png"
   },
   {
     title : "X-Wing",
@@ -92,7 +99,8 @@ const rebelShipsArray = [
     length : "13,4 Mètres",
     width : "11,76 Mètres",
     maxSpeed : "1050km/h",
-    cost : "150 000 Crédits"
+    cost : "150 000 Crédits",
+    pilot : "src/img/Luke_Skywalker_corps rognée2.png"
   },
   {
     title : "Y-Wing",
@@ -102,7 +110,8 @@ const rebelShipsArray = [
     length : "23,4 Mètres",
     width : "12 Mètres",
     maxSpeed : "1000km/h",
-    cost : "310 000 Crédits"
+    cost : "310 000 Crédits",
+    pilot : "src/img/Pilote y wing.png"
   },
   {
     title : "A-Wing",
@@ -112,7 +121,8 @@ const rebelShipsArray = [
     length : "7,682 Mètres",
     width : "4,623 Mètres",
     maxSpeed : "1350km/h",
-    cost : "190 000 Crédits"
+    cost : "190 000 Crédits",
+    pilot : "src/img/Poe_Dameron_corps version.png"
   }
 ]
 
@@ -148,7 +158,9 @@ function showSlides(n) {
     specSpeed.textContent = empireShipsArray[slideIndex -1].maxSpeed;
     const specCost = document.getElementById("spec-cost");
     specCost.textContent = empireShipsArray[slideIndex -1].cost;
-  }
+    const specPilot = document.querySelector(".imgpilote");
+    specPilot.src = empireShipsArray[slideIndex -1].pilot;
+    }
 
   showSlidesRebel(slideIndexRebel);
 
@@ -181,4 +193,6 @@ function plusSlidesRebel(n) {
       specSpeed.textContent = rebelShipsArray[slideIndexRebel -1].maxSpeed;
       const specCost = document.getElementById("spec-cost");
       specCost.textContent = rebelShipsArray[slideIndexRebel -1].cost;
+      const specPilot = document.querySelector(".imgpilote");
+      specPilot.src = rebelShipsArray[slideIndexRebel -1].pilot;
     }
