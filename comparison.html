@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/global.css" />
+    <script src="comp.js" defer></script>
     <link
       rel="stylesheet"
-      href="style\desktop.css"
+      href="style/desktop.css"
       media="screen and (min-width: 992px)"
     />
     <link
@@ -16,7 +18,7 @@
     />
     <link
       rel="stylesheet"
-      href="style\global.css"
+      href="style/global.css"
       media="screen and (max-width: 580px)"
     />
     <link rel="stylesheet" href="style/fonts.css" />
@@ -50,65 +52,69 @@
       <div class="comparison-boxes">
         <div class="ship-box">
           <div class="select">
-            <select name="format" id="format">
+            <select name="empire" id="empire-select">
               <option selected disabled>Choose a ship !</option>
-              <option value="Death-Star">Death Star</option>
-              <option value="Radiant">Radiant VII</option>
-              <option value="Finalizer">Finalizer</option>
-              <option value="Devastator">The Devastator</option>
-              <option value="Tie">TIE fighter</option>
+              <option value="1">Chasseur TIE</option>
+              <option value="2">Intercepteur TIE</option>
+              <option value="3">Navette T-4a Lambda</option>
+              <option value="4">Navette de commande Upsilon</option>
+              <option value="5">Voilier Solaire Punworcca 116</option>
             </select>
           </div>
+          <img src="" id="id_img_empire" />
         </div>
 
         <div class="ship-box">
           <div class="select">
-            <select name="format" id="format">
+            <select name="empire" id="rebel-select">
               <option selected disabled>Choose a ship !</option>
-              <option value="Death-Star">Death Star</option>
-              <option value="Radiant">Radiant VII</option>
-              <option value="Finalizer">Finalizer</option>
-              <option value="Devastator">The Devastator</option>
-              <option value="Tie">TIE fighter</option>
+              <option value="1">Chasseur Jedi</option>
+              <option value="2">Faucon</option>
+              <option value="3">X-Wing</option>
+              <option value="4">A-Wing</option>
+              <option value="5">Y-Wing</option>
             </select>
           </div>
+          <img src="" id="id_img_rebel" />
         </div>
       </div>
     </div>
-    <div class="button">
+    <div class="button" onclick="loadBattleBar()">
       <button class="battle">battle</button>
     </div>
     <div class="spec">
       <div class="spec-box"></div>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
       <div class="spec-box"></div>
     </div>
     <div class="winner">
-      <button>Winner</button>
+      <button onClick="window.location.reload();">Start Again</button>
     </div>
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="empire-ships.html">Empire</a></li>
+          <li><a href="rebel-ships.html">Rebels</a></li>
+          <li><a href="comparison.html">Comparateur</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <form action="post">
+          <label for="formNom">Nom</label>
+          <input id="formNom" type="text" />
+          <label for="formMail">Mail</label>
+          <input id="formMail" type="text" />
+          <button id="form-button">Envoyer</button>
+        </form>
+      </div>
+      <div class="footer-social">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-links">
-      <ul>
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="empire-ships.html">Empire</a></li>
-        <li><a href="rebel-ships.html">Rebels</a></li>
-        <li><a href="comparison.html">Comparateur</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <form action="">
-        <label for="formNom">Nom</label>
-        <input id="formNom" type="text" />
-        <label for="formMail">Mail</label>
-        <input id="formMail" type="text" />
-        <button id="form-button">Envoyer</button>
-      </form>
-    </div>
-    <div class="footer-social">
-      <i class="fa-brands fa-facebook fa-2x"></i>
-      <i class="fa-brands fa-twitter fa-2x"></i>
-      <i class="fa-solid fa-envelope fa-2x"></i>
-    </div>
-  </footer>
-  <script src="index.js" defer></script>
 </html>
