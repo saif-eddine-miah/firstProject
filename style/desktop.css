@@ -43,24 +43,18 @@ nav {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease;
+  transition: background-position 500ms ease;
 }
 .mobile-links a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   background-position: 0 100%;
 }
-.fondchasseurtie {
-  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
-  position: relative;
-  height: 40rem;
-  padding: 5px;
-  /* background-color: #a8b7ab; */
-}
 
 /* Image de fonds */
 .fondhangarempire {
   background-image: url("/src/img/Hangar.jpg");
+  background-attachment: fixed;
 }
 .fondchasseurtie {
   position: relative;
@@ -70,6 +64,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  height: 40rem;
 }
 
 /* Image chasseur sur image de fonds*/
@@ -248,6 +244,9 @@ i.fa-brands,
 i.fa-solid,
 form label {
   color: white;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 i.fa-brands:hover,
 i.fa-solid:hover,
@@ -283,9 +282,12 @@ form label:hover {
   align-items: center;
   justify-content: center;
   background-image: url("/src/img/Hangar.jpg");
+  background-attachment: fixed;
 }
 .fondhangarrebel nav {
   min-width: 100%;
+}
+.fondfaucon {
 }
 .topnav {
   display: flex;
@@ -307,8 +309,7 @@ form label:hover {
 
 .photofaucon {
   position: absolute;
-  width: 70%;
-  height: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
