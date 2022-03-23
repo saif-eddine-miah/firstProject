@@ -115,8 +115,9 @@ const rebelShipsArray = [
     cost : "190 000 Crédits"
   }
 ]
-showSlides(slideIndex);
 
+let slideIndexRebel = 1;
+showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -148,34 +149,35 @@ function showSlides(n) {
     specCost.textContent = empireShipsArray[slideIndex -1].cost;
   }
 
-  showSlidesRebel(slideIndex);
+  showSlidesRebel(slideIndexRebel);
 
 
-function plusSlides(n) {
-  showSlidesRebel(slideIndex += n);
+function plusSlidesRebel(n) {
+  showSlidesRebel(slideIndexRebel += n);
 }
   function showSlidesRebel(n) {
     let i = 0;
     let slides = document.getElementsByClassName("slides");
-    if (n > slides.length) {slideIndex = 1};
-    if (n < 1) {slideIndex = slides.length};
+    if (n > slides.length) {slideIndexRebel = 1};
+    if (n < 1) {slideIndexRebel = slides.length};
       for (let i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
       }
-      slides[slideIndex-1].style.display = "block"; 
+      slides[slideIndexRebel-1].style.display = "block"; 
       const specPageTitle = document.getElementById("spec-page-title");
-      specPageTitle.textContent = rebelShipsArray[slideIndex -1].title;
+      specPageTitle.textContent = rebelShipsArray[slideIndexRebel -1].title;
       const specPageDesc = document.getElementById("spec-page-desc");
-      specPageDesc.textContent = rebelShipsArray[slideIndex -1].description;
+      specPageDesc.textContent = rebelShipsArray[slideIndexRebel -1].description;
       const specClass = document.getElementById("spec-class");
-      specClass.textContent = rebelShipsArray[slideIndex -1].classe;
+      specClass.textContent = rebelShipsArray[slideIndexRebel -1].classe;
       const specConstruction = document.getElementById("spec-constructor");
-      specConstruction.textContent = rebelShipsArray[slideIndex -1].construction;    const specLongeur = document.getElementById("spec-longeur");
-      specLongeur.textContent = rebelShipsArray[slideIndex -1].length;
+      specConstruction.textContent = rebelShipsArray[slideIndexRebel -1].construction;
+      const specLongeur = document.getElementById("spec-longeur");
+      specLongeur.textContent = rebelShipsArray[slideIndexRebel -1].length;
       const specLargeur = document.getElementById("spec-largeur");
-      specLargeur.textContent = rebelShipsArray[slideIndex -1].width;
+      specLargeur.textContent = rebelShipsArray[slideIndexRebel -1].width;
       const specSpeed = document.getElementById("spec-speed");
-      specSpeed.textContent = rebelShipsArray[slideIndex -1].maxSpeed;
+      specSpeed.textContent = rebelShipsArray[slideIndexRebel -1].maxSpeed;
       const specCost = document.getElementById("spec-cost");
-      specCost.textContent = rebelShipsArray[slideIndex -1].cost;
+      specCost.textContent = rebelShipsArray[slideIndexRebel -1].cost;
     }
