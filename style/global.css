@@ -113,11 +113,7 @@ footer ul {
 .footer-contact {
   margin: 0 auto;
 }
-.comparison-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
+
 /* il é ou saif ?? */
 .show-links {
   display: flex;
@@ -141,11 +137,7 @@ i.fa-eclipse {
   color: black;
 }
 
-.comparison-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
+
 .fa-envelope {
   margin-top: 16px;
   padding: 16px;
@@ -154,14 +146,15 @@ i.fa-eclipse {
 .comparison-boxes {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  min-height: 25vh;
+  gap: 1vh;
 }
 
 .ship-box {
-  width: 10rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: var(--primary-color);
+  min-width: 20vw;
+  max-width: 40vw;
+  min-height: auto;
+  background-color: #28282888;
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
@@ -170,54 +163,17 @@ i.fa-eclipse {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2vh;
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
-  height: 15rem;
-  padding: 10px;
-  background-color: var(--primary-color);
+  width: 90vw;
+  height: 15vh;
+background-color: var(--primary-color);
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
 
-.spec-box {
-  width: 12rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  border-radius: 1rem;
-}
-.ship-box {
-  width: 10rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: lightgrey;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 3rem;
-}
-.spec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30rem;
-  height: 15rem;
-  padding: 10px;
-  background-color: lightgrey;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 3rem;
-}
 
-.spec-box {
-  width: 12rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: whitesmoke;
-  border-radius: 1rem;
-}
 
 .button {
   display: flex;
@@ -235,7 +191,7 @@ i.fa-eclipse {
   text-shadow: 0px 1px 0px #ffffff;
 }
 
-.winner {
+.startAgain {
   display: flex;
   justify-content: center;
 }
@@ -305,7 +261,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 10em;
+  width: 25;
   height: 2em;
   line-height: 2.3;
   background: #4d4d4d;
@@ -553,34 +509,6 @@ p {
   max-width: 10rem;
 }
 
-.gauge {
-  width: 100%;
-  max-width: 150px;
-  font-size: 32px;
-  color: #004033;
-}
-
-.gauge__body {
-  width: 100%;
-  height: 0;
-  padding-bottom: 50%;
-  background: #b4c0be;
-  position: relative;
-  overflow: hidden;
-}
-
-.gauge__fill {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: inherit;
-  height: 100%;
-  background: #009578;
-  transform-origin: center top;
-  transform: rotate(0.25turn);
-  transition: transform 0.2s ease-out;
-}
-
 #myProgress {
   width: 100%;
   background-color: rgb(0, 183, 255);
@@ -595,4 +523,13 @@ p {
 }
 .specs h3 {
   text-align: center;
+}
+
+.intro{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1rem;
+text-align: center;
+color: white;
+text-shadow: 3px 3px 2px #000000;
+padding-bottom: 1rem;
 }
