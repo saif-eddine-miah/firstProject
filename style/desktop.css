@@ -90,6 +90,15 @@ nav {
 .welcome {
   position: absolute;
   left: 30%;
+  font-size: 70px;
+}
+.kaaris-mdrrrr{
+  font-size: 40px;
+}
+.bot-menu-cont {
+  /* Menu du bas accueil conteneur */
+  
+  font-size: 35px;
 }
 h1 {
   margin: 0;
@@ -257,6 +266,7 @@ form label {
 .slides {
   max-width: 30%;
 }
+
 
 /* Image faucon sur image de fonds*/
 .fondfaucon {
