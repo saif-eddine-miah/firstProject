@@ -368,6 +368,8 @@ select::-ms-expand {
   padding: 0.25rem;
   border-radius: 0.5rem;
   flex-basis: auto ;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-1plan {
@@ -375,7 +377,7 @@ select::-ms-expand {
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
-  height: 60rem;
+  height: 40rem;
   width: 90%;
   margin: auto 2rem;
 }
@@ -384,11 +386,12 @@ select::-ms-expand {
   margin-left: -40rem;
   z-index: 0;
   filter:brightness(75%);
+  position: absolute;
 }
 
 .welcome {
   max-width: 60%;
-  z-index: 1;
+  z-index: 1 ;
   flex-wrap: wrap;
   color: #ffe919;
   position: absolute;
