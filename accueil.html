@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/img/SWB.png" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/global.css" />
     <link
@@ -18,15 +19,17 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Star Wars BattleShips</title>
     <script src="index.js" defer></script>
     <script src="scroll-effect.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
   </head>
   <body>
     <!-- <div class="black-star1">kaaaaris</div> -->
@@ -51,19 +54,22 @@
           <a href="rebel-ships.html">REBEL &nbsp;</a>
         </div>
       </nav>
-      
+
       <div class="background-div">
         <div class="hero-1plan">
-          
-          
           <h1 class="welcome">STAR WARS BATTLESHIPS</h1>
         </div>
         <h2 class="kaaris-mdrrrr">
-          Bienvenue sur Star Wars BattleShip, le site référence en ce qui concerne les vaisseaux spatiaux de la saga StarWars.<br>
-          Découvrez les différentes unités de guerre de l'alliance et de l'empire avec leurs caractéristiques, leurs forces ainsi que leurs faiblesses.<br>
-          Apprenez quels pilotes de légende les ont manoeuvré, leurs histoire, ou encore, leurs puissances de feu!<br>
-          Pas encore rassasié ??<br>
-          Découvrez notre comparateur de vaisseaux et apprenez à discerner les bonnes occasions de vulgaires tas de ferraille !!!
+          Bienvenue sur Star Wars BattleShip, le site référence en ce qui
+          concerne les vaisseaux spatiaux de la saga StarWars.<br />
+          Découvrez les différentes unités de guerre de l'alliance et de
+          l'empire avec leurs caractéristiques, leurs forces ainsi que leurs
+          faiblesses.<br />
+          Apprenez quels pilotes de légende les ont manoeuvré, leurs histoire,
+          ou encore, leurs puissances de feu!<br />
+          Pas encore rassasié ??<br />
+          Découvrez notre comparateur de vaisseaux et apprenez à discerner les
+          bonnes occasions de vulgaires tas de ferraille !!!
         </h2>
         <div class="bot-menu-cont">
           <div class="bot-menu">
@@ -89,13 +95,14 @@
           </div>
         </div>
       </div>
+      <img
+        class="divider-img"
+        src="src/img/triangleNegative(1).svg"
+        alt="triangle"
+        data-type="accueil"
+      />
     </div>
-    <img
-      class="divider-img"
-      src="src/img/triangleNegative(1).svg"
-      alt="triangle"
-      data-type="accueil"
-    />
+
     <footer>
       <div class="footer-links">
         <ul>
@@ -113,7 +120,7 @@
           <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
           <label for="formMessage">Message</label>
           <input id="formMessage" type="text" placeholder="Message" />
-          <button id="form-button">Envoyer</button>
+          <a id="form-button">Envoyer</a>
         </form>
       </div>
       <div class="footer-social">

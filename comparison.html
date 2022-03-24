@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/img/SWB.png" />
     <link rel="stylesheet" href="style/global.css" />
     <script src="comp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
     <link
       rel="stylesheet"
       href="style/desktop.css"
@@ -24,8 +27,9 @@
     <link rel="stylesheet" href="style/fonts.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style/fonts.css">
     <title>Ship Battle</title>
   </head>
   <body>
@@ -49,6 +53,16 @@
           <a href="rebel-ships.html">REBEL &nbsp;</a>
         </div>
       </nav>
+      <div class="intro">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+          dapibus pellentesque. Praesent porttitor, dui tincidunt pretium egestas,
+          quam enim facilisis felis, vel euismod nibh elit eget nisl. Aliquam
+          aliquam est vitae turpis suscipit tempor. Phasellus sed porttitor arcu,
+          pharetra vestibulum libero. 
+      </div>
+      </p>
       <div class="comparison-boxes">
         <div class="ship-box">
           <div class="select">
@@ -78,44 +92,23 @@
           <img src="" id="id_img_rebel" />
         </div>
       </div>
-    </div>
-    <div class="button" onclick="loadBattleBar()">
-      <button class="battle">battle</button>
+      <div class="button" onclick="loadBattleBar()">
+        <button class="battle">battle</button>
+      </div>
     </div>
     <div class="spec">
-      <div class="spec-box"></div>
+      <div class="inside-spec">
+      <img src="src/img/Empire-Logo.png" alt="empire">
       <div id="myProgress">
         <div id="myBar"></div>
       </div>
-      <div class="spec-box"></div>
+      <img src="/src/img/Alliance-Logo.png" alt="rebel">
     </div>
-    <div class="winner">
+      <p id="win">Who will win ?</p>
+    </div>
+    <div class="startAgain">
       <button onClick="window.location.reload();">Start Again</button>
     </div>
-    <footer>
-      <div class="footer-links">
-        <ul>
-          <li><a href="accueil.html">Accueil</a></li>
-          <li><a href="empire-ships.html">Empire</a></li>
-          <li><a href="rebel-ships.html">Rebels</a></li>
-          <li><a href="comparison.html">Comparateur</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <form action="post">
-          <label for="formNom">Nom</label>
-          <input id="formNom" type="text" />
-          <label for="formMail">Mail</label>
-          <input id="formMail" type="text" />
-          <button id="form-button">Envoyer</button>
-        </form>
-      </div>
-      <div class="footer-social">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-        <i class="fa-brands fa-twitter fa-2x"></i>
-        <i class="fa-solid fa-envelope fa-2x"></i>
-      </div>
-    </footer>
   </body>
   <footer>
     <div class="footer-links">
@@ -134,7 +127,7 @@
         <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
         <label for="formMessage">Message</label>
         <input id="formMessage" type="text" placeholder="Message" />
-        <button id="form-button">Envoyer</button>
+        <a id="form-button">Envoyer</a>
       </form>
     </div>
     <div class="footer-social">

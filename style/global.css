@@ -5,21 +5,18 @@
   --main-bg-color: #c5c3c6;
   --primary-color: #282828;
   --secondary-color: #757575;
-
 }
-/* *{
-  z-index: 5;
-} */
 body {
   
   margin: 0;
-  background-color: #ced4da ;
+  background-color: #ced4da;
   /* width: 100vw;
   overflow-x:hidden ; */
 }
 nav {
   padding: 8px;
   background-color: transparent;
+  margin-bottom: 5rem;
 }
 .divider-img {
   margin: -5px;
@@ -79,7 +76,7 @@ footer ul {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 24%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -120,7 +117,9 @@ footer ul {
     opacity: 1;
   }
 }
-
+.fond-container-faucon {
+  height: 30rem;
+}
 .fond-accueil {
   background-image: url("/src/img/fond-accueil.jpg");
   background-size: cover;
@@ -132,17 +131,14 @@ footer ul {
   z-index: 1000;
   margin: 0 auto;
 }
-.comparison-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
+
 /* il é ou saif ?? */
 .show-links {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .mobile-links {
   display: none;
@@ -169,11 +165,8 @@ form label:hover {
   color: var(--accent-color);
 }
 
-.comparison-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
+
+
 .fa-brands,
 .fa-envelope {
   margin-top: 16px;
@@ -183,74 +176,62 @@ form label:hover {
 .comparison-boxes {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  min-height: 40vw;
+  gap: 4vh;
 }
 
 .ship-box {
-  width: 10rem;
-  height: 12rem;
-  padding: 10px;
+  width:35%;
+  border: none;
+  background-color: #28282888;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+#id_img_empire{
+  width: 100%;
+}
+#id_img_rebel{
+  width: 100%;
+}
+.spec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 90vw;
+  height: 15vh;
   background-color: var(--primary-color);
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
-
-.spec {
+.inside-spec{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30rem;
-  height: 15rem;
-  padding: 10px;
-  background-color: var(--primary-color);
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
+  margin: 0;
+  width: 100%;
+  height: 50%;
+}
+.inside-spec p{
+  margin: 0;
+  font-family: "soloistregular";
+}
+#win{
+  font-family: "soloistregular";
+  color: #ffffff;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.spec-box {
-  width: 12rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  border-radius: 1rem;
-}
-.ship-box {
-  width: 10rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: lightgrey;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 3rem;
-}
-.spec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30rem;
-  height: 15rem;
-  padding: 10px;
-  background-color: lightgrey;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 3rem;
-}
-
-.spec-box {
-  width: 12rem;
-  height: 12rem;
-  padding: 10px;
-  background-color: whitesmoke;
-  border-radius: 1rem;
-}
 
 .button {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 .battle {
   background-color: #ededed;
@@ -264,9 +245,10 @@ form label:hover {
   text-shadow: 0px 1px 0px #ffffff;
 }
 
-.winner {
+.startAgain {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 div button {
   background-color: #ededed;
@@ -309,10 +291,11 @@ div button {
   flex-direction: column;
   color: var(--accent-color);
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  
 }
 body {
   background-color: #ced4da;
@@ -354,12 +337,11 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 10em;
   height: 2em;
   line-height: 2.3;
   background: #4d4d4d;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 .select::after {
   content: "\25BC";
@@ -409,7 +391,6 @@ select::-ms-expand {
 .button-picture {
   max-width: 10rem;
   margin-bottom: 1rem;
-  
 }
 @media (max-width: 607px) /* and(min-width:400) */ {
   .middle-button {
@@ -445,14 +426,12 @@ select::-ms-expand {
 }
 
 .black-star1 {
-  background-image: url("src/img/Etoile-noir.png") ;
   display:block;
   margin-left: -20rem; 
   margin-top: 5rem;
   z-index: -0;
   filter: brightness(75%);
   position: fixed; 
-  color: red;
   width: 100%;
 }
 
@@ -463,10 +442,12 @@ select::-ms-expand {
   position: absolute;
   left: 20%;
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
-  text-shadow: 5px 8px 5px  rgb(48, 43, 43);
+  text-shadow: 5px 8px 5px rgb(48, 43, 43);
 }
 
 .fondhangarrebel {
@@ -493,9 +474,34 @@ select::-ms-expand {
   justify-content: center;
 }
 
+.number-text {
+  color: white;
+}
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.slides img {
+  max-height: 100%;
+  max-width: 70%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Texte Faucon Millenium*/
 h1 {
   margin: 0;
+  font-family: "soloistregular";
 }
 
 .fauconmillenium {
@@ -518,7 +524,10 @@ p {
 
 /* Specificités Faucon Millenium*/
 .specstext {
-  background-color: rgb(185, 189, 192);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.25rem;
   margin: 2rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
@@ -561,16 +570,32 @@ p {
   color: white;
 }
 .slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .slides img {
-  max-width: 100%;
+  max-height: 100%;
+  max-width: 70%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* Texte Chasseur Tie*/
 h1 {
   margin: 0;
 }
+
+
 
 .chasseurtie {
   background-color: #ced4da;
@@ -609,47 +634,17 @@ p {
   right: 0;
   min-height: 1vh;
 }
-  .specs h3{
-    text-align: center;
-  }
+.specs h3 {
+  text-align: center;
+}
 
-  
-
-#id_img_empire{
+#id_img_empire {
   max-height: 10rem;
   max-width: 10rem;
 }
-#id_img_rebel{
+#id_img_rebel {
   max-height: 10rem;
   max-width: 10rem;
-}
-
-.gauge {
-  width: 100%;
-  max-width: 150px;
-  font-size: 32px;
-  color: #004033;
-}
-
-.gauge__body {
-  width: 100%;
-  height: 0;
-  padding-bottom: 50%;
-  background: #b4c0be;
-  position: relative;
-  overflow: hidden;
-}
-
-.gauge__fill {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: inherit;
-  height: 100%;
-  background: #009578;
-  transform-origin: center top;
-  transform: rotate(0.25turn);
-  transition: transform 0.2s ease-out;
 }
 
 #myProgress {
@@ -666,4 +661,13 @@ p {
 }
 .specs h3 {
   text-align: center;
+}
+
+.intro{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1rem;
+text-align: center;
+color: white;
+text-shadow: 3px 3px 2px #000000;
+padding-bottom: 1rem;
 }

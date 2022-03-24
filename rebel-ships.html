@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/img/SWB.png" />
     <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
     <link
       rel="stylesheet"
       href="style/desktop.css"
       media="screen and (min-width: 992px)"
     />
-    <link rel="stylesheet" href="style/global.css" />
     <link
       rel="stylesheet"
       media="screen and (min-width: 576px) and (max-width: 992px)"
@@ -24,10 +25,13 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Vaisseaux de l'Alliance</title>
     <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
+    <script src="rebelSlideshow.js" defer></script>
   </head>
 
   <body>
@@ -55,16 +59,13 @@
       <div class="slideshow-container">
         <div class="fond-container-faucon">
           <div class="fondfaucon slides fade">
-            <img
-              src="src\img\Faucon-Millenium.png"
-              alt="Photo Faucon Millenium"
-            />
+            <img src="src/img/RebelImage\2.png" alt="Photo Faucon Millenium" />
           </div>
           <div class="slides fade">
             <img src="src/img/Chasseur Jedi.png" alt="Photo Chasseur Jedi" />
           </div>
           <div class="slides fade">
-            <img src="src/img/xwing.png" alt="Photo X Wing" />
+            <img src="src/img/RebelImage\3.png" alt="Photo X Wing" />
           </div>
           <div class="slides fade">
             <img
@@ -80,40 +81,41 @@
         <a class="next" onclick="plusSlidesRebel(1)">&#10095;</a>
       </div>
     </div>
-
-    <div class="fauconmillenium">
-      <h1 id="spec-page-title">Le Faucon Millenium</h1>
-      <p id="spec-page-desc">
-        Le Faucon Millenium est un vaisseau cargo, d’une capacité de 100 tonnes
-        de fret, dont le modèle fut très répendu à la fin de la République
-        Galactique. Il dispose de deux moteurs subluminiques SRB42 lourdement
-        modifiés par ses propriétaires successifs et d’un Hyperdrive. Il peut
-        embarquer un équipage de six personnes (deux pilotes, deux navigateurs
-        et deux canonniers) ainsi que six passagers. Le Faucon Millenium a eu
-        des propriétaires célèbres tels que Lando Calrissian et Han Solo.
-      </p>
-    </div>
-
-    <div class="specs">
-      <div class="specstext">
-        <h3>Spécificités</h3>
-        <ul>
-          <li id="spec-class">Classe : Cargo</li>
-          <li id="spec-constructor">
-            Construction : Corporation technique corellienne
-          </li>
-          <li id="spec-longeur">Longueur : 34,75 mètres</li>
-          <li id="spec-largeur">Largeur : 25,61 mètres</li>
-          <li id="spec-speed">Vitesse maximale atmosphérique : 1050 km/h</li>
-          <li id="spec-cost">Coût : A négocier avec Han Solo</li>
-        </ul>
+  
+    <div class="specs-container">
+      <div class="fauconmillenium">
+        <h1 id="spec-page-title">Le Faucon Millenium</h1>
+        <p id="spec-page-desc">
+          Le Faucon Millenium est un vaisseau cargo, d’une capacité de 100 tonnes
+          de fret, dont le modèle fut très répendu à la fin de la République
+          Galactique. Il dispose de deux moteurs subluminiques SRB42 lourdement
+          modifiés par ses propriétaires successifs et d’un Hyperdrive. Il peut
+          embarquer un équipage de six personnes (deux pilotes, deux navigateurs
+          et deux canonniers) ainsi que six passagers. Le Faucon Millenium a eu
+          des propriétaires célèbres tels que Lando Calrissian et Han Solo.
+        </p>
       </div>
-      <div class="Pilotefaucon">
-        <img
-          class="imgpilote"
-          src="src/img/han_solo_star_wars_7_ccexpress.png"
-          alt="Pilote Faucon"
-        />
+      <div class="specs">
+        <div class="specstext">
+          <h3>Spécificités</h3>
+          <ul>
+            <li id="spec-class">Classe : Cargo</li>
+            <li id="spec-constructor">
+              Construction : Corporation technique corellienne
+            </li>
+            <li id="spec-longeur">Longueur : 34,75 mètres</li>
+            <li id="spec-largeur">Largeur : 25,61 mètres</li>
+            <li id="spec-speed">Vitesse maximale atmosphérique : 1050 km/h</li>
+            <li id="spec-cost">Coût : A négocier avec Han Solo</li>
+          </ul>
+        </div>
+        <div class="Pilotefaucon">
+          <img
+            class="imgpilote"
+            src="src/img/han_solo_star_wars_7_ccexpress.png"
+            alt="Pilote Faucon"
+          />
+        </div>
       </div>
     </div>
     <img
@@ -138,7 +140,7 @@
           <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
           <label for="formMessage">Message</label>
           <input id="formMessage" type="text" placeholder="Message" />
-          <button id="form-button">Envoyer</button>
+          <a id="form-button">Envoyer</a>
         </form>
       </div>
       <div class="footer-social">

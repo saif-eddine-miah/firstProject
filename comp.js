@@ -42,10 +42,13 @@ else if (key==5){
 battleValue -= 25;
 }
 })
-
+let winner = document.getElementById('win')
 function loadBattleBar(){
 console.log(battleValue)
 myBar.style.width = `${battleValue}%`;
+if (battleValue<50){winner.innerText =  ("Rebel's won !") ;winner.style.color='rgb(0, 183, 255)';}
+if (battleValue>50){winner.innerText =  ("The Empire won !") ;winner.style.color='rgb(224, 0, 0)';}
 battleValue = 0;
 console.log(battleValue)
+
 }
