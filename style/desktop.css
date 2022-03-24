@@ -90,8 +90,11 @@ nav {
   max-height: 100%;
   max-width: 100%;
 }
-.black-star {
+.black-star1 {
   margin-left: auto;
+  margin-left: 30%;
+  width: 60%;
+  
 }
 .welcome {
   position: absolute;
