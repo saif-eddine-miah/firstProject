@@ -134,7 +134,15 @@ function plusSlides(n) {
 }
 
 
-
+slides[slideIndexEmpire-1].style.display = "block"; 
+specPageDesc.textContent = empireShipsArray[0].description;
+specClass.textContent = empireShipsArray[0].classe;
+specConstruction.textContent = empireShipsArray[0].construction;
+specLongeur.textContent = empireShipsArray[0].length;  
+specLargeur.textContent = empireShipsArray[0].width;
+specSpeed.textContent = empireShipsArray[0].maxSpeed;
+specCost.textContent = empireShipsArray[0].cost;
+specPilot.src = empireShipsArray[0].pilot;
 function showSlides(n) {
   let i = 0;
   let slides = document.getElementsByClassName("slides");
