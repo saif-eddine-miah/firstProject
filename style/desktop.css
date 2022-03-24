@@ -95,8 +95,6 @@ nav {
   margin-left: 30%;
   width: auto;
   height: auto; 
-  
-  
 }
 .welcome {
   position: absolute;
@@ -267,7 +265,7 @@ footer form {
     0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
 }
 .divider-img {
-  margin: -5px;
+  margin: -5px 0;
 }
 .divider-img[data-type="accueil"] {
   background-color: transparent;
@@ -375,13 +373,11 @@ form label:hover {
 }
 .fauconmillenium h1 {
   text-align: center;
-  
 }
 
 .fauconmillenium,
 h1,
 p {
-  
   margin: 2rem;
 }
 
@@ -414,4 +410,28 @@ p {
 .Pilotefaucon {
   display: block;
   max-width: 100%;
+}
+
+.comparison-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  min-height:300px;
+}
+
+.ship-box {
+  max-width:25%;
+  border: none;
+  background-color: #28282888;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.spec{
+  height: 30vh;
+  padding: 1rem;
+}
+
+#win{
+  font-size: x-large;
 }
