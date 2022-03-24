@@ -101,7 +101,6 @@ nav {
 .kaaris-mdrrrr {
   font-size: 40px;
   text-align: -webkit-center;
-  
 }
 .bot-menu-cont {
   /* Menu du bas accueil conteneur */
@@ -111,8 +110,17 @@ nav {
 h1 {
   margin: 0;
 }
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 .chasseurtie {
   background-color: #ced4da;
+  max-width: 140ch;
   color: black;
   margin: 0%;
   padding: 0%;
@@ -155,7 +163,7 @@ p {
 .specs {
   padding: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10rem;
 }
 
@@ -168,6 +176,8 @@ p {
   background-color: #495057;
   color: white;
   width: 25rem;
+  min-height: 100%;
+  margin: 0;
   border-radius: 2rem;
   font-family: "Noto Sans", sans-serif;
 }
@@ -175,7 +185,6 @@ p {
 /* .specstext h3 {
   text-align: center;
 } */
-
 
 .imgpilote {
   max-height: 100%;
@@ -186,6 +195,7 @@ p {
 }
 
 .Pilotechasseurtie {
+  display: block;
   max-width: 100%;
 }
 .specs.specstext h3 {
@@ -348,7 +358,6 @@ form label:hover {
   font-family: "Noto Sans", sans-serif;
   font-size: medium;
   text-align: justify;
-  
 }
 .fauconmillenium h1 {
   text-align: center;
