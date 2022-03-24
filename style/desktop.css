@@ -94,8 +94,7 @@ nav {
   margin-left: auto;
   margin-left: 30%;
   width: auto;
-  height: auto; 
-  
+  height: auto;
 }
 .welcome {
   position: absolute;
@@ -266,7 +265,7 @@ footer form {
     0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
 }
 .divider-img {
-  margin: -5px;
+  margin: -5px 0;
 }
 .divider-img[data-type="accueil"] {
   background-color: transparent;
@@ -374,13 +373,11 @@ form label:hover {
 }
 .fauconmillenium h1 {
   text-align: center;
-  
 }
 
 .fauconmillenium,
 h1,
 p {
-  
   margin: 2rem;
 }
 
