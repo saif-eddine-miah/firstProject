@@ -636,14 +636,7 @@ p {
   text-align: center;
 }
 
-#id_img_empire {
-  max-height: 10rem;
-  max-width: 10rem;
-}
-#id_img_rebel {
-  max-height: 10rem;
-  max-width: 10rem;
-}
+
 
 #myProgress {
   width: 100%;
