@@ -6,7 +6,6 @@
   --primary-color: #282828;
   --secondary-color: #757575;
 }
-
 body {
   margin: 0;
   background-color: #ced4da;
@@ -135,10 +134,11 @@ footer ul {
 }
 /* il é ou saif ?? */
 .show-links {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .mobile-links {
   display: none;
