@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/img/SWB.png" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/global.css" />
     <link
@@ -24,10 +25,12 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Vaisseaux de l'Alliance</title>
     <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
     <script src="rebelSlideshow.js" defer></script>
   </head>
 
@@ -137,7 +140,7 @@
           <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
           <label for="formMessage">Message</label>
           <input id="formMessage" type="text" placeholder="Message" />
-          <button id="form-button">Envoyer</button>
+          <a id="form-button">Envoyer</a>
         </form>
       </div>
       <div class="footer-social">
