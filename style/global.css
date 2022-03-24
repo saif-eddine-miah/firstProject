@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background-color: #ced4da ;
+  background-color: #ced4da;
   /* width: 100vw;
   overflow-x:hidden ; */
 }
@@ -74,7 +74,7 @@ footer ul {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 14%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -115,7 +115,9 @@ footer ul {
     opacity: 1;
   }
 }
-
+.fond-container-faucon {
+  height: 30rem;
+}
 .fond-accueil {
   background-image: url("/src/img/fond-accueil.jpg");
   background-size: cover;
@@ -293,17 +295,17 @@ div button {
 .bot-menu-cont {
   display: flex;
   padding-bottom: 6rem;
-  
 }
 .bot-menu {
   display: flex;
   flex-direction: column;
   color: var(--accent-color);
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  
 }
 body {
   background-color: #ced4da;
@@ -350,7 +352,7 @@ select::-ms-expand {
   line-height: 2.3;
   background: #4d4d4d;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 .select::after {
   content: "\25BC";
@@ -400,7 +402,6 @@ select::-ms-expand {
 .button-picture {
   max-width: 10rem;
   margin-bottom: 1rem;
-  
 }
 @media (max-width: 607px) /* and(min-width:400) */ {
   .middle-button {
@@ -432,14 +433,13 @@ select::-ms-expand {
 }
 
 .black-star {
-  
-  display:block;
+  display: block;
   margin-left: -40rem;
   margin-top: 5rem;
   z-index: 0;
   filter: brightness(75%);
   position: absolute;
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
 .welcome {
@@ -449,10 +449,12 @@ select::-ms-expand {
   position: absolute;
   left: 20%;
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
-  text-shadow: 5px 8px 5px  rgb(48, 43, 43);
+  text-shadow: 5px 8px 5px rgb(48, 43, 43);
 }
 
 .fondhangarrebel {
@@ -547,10 +549,15 @@ p {
   color: white;
 }
 .slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .slides img {
-  max-width: 100%;
+  max-height: 100%;
+  max-width: 70%;
 }
 
 /* Texte Chasseur Tie*/
@@ -595,17 +602,15 @@ p {
   right: 0;
   min-height: 1vh;
 }
-  .specs h3{
-    text-align: center;
-  }
+.specs h3 {
+  text-align: center;
+}
 
-  
-
-#id_img_empire{
+#id_img_empire {
   max-height: 10rem;
   max-width: 10rem;
 }
-#id_img_rebel{
+#id_img_rebel {
   max-height: 10rem;
   max-width: 10rem;
 }
