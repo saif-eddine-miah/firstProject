@@ -184,6 +184,15 @@ body {
   justify-content: center;
 }
 
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Texte Chasseur Tie*/
 h1 {
   margin: 0;
@@ -212,6 +221,14 @@ p {
   padding: 2rem;
   background-color: #ced4da;
 }
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .slides img {
   max-width: 100%;
 }
@@ -302,6 +319,15 @@ p {
 }
 .fondhangarrebel nav {
   min-width: 100%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* Texte Faucon Millenium*/

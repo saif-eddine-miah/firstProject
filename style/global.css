@@ -6,16 +6,16 @@
   --primary-color: #282828;
   --secondary-color: #757575;
 }
-
 body {
   margin: 0;
-  background-color: #ced4da ;
+  background-color: #ced4da;
   /* width: 100vw;
   overflow-x:hidden ; */
 }
 nav {
   padding: 8px;
   background-color: transparent;
+  margin-bottom: 5rem;
 }
 .divider-img {
   margin: -5px;
@@ -74,7 +74,7 @@ footer ul {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 24%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -115,7 +115,9 @@ footer ul {
     opacity: 1;
   }
 }
-
+.fond-container-faucon {
+  height: 30rem;
+}
 .fond-accueil {
   background-image: url("/src/img/fond-accueil.jpg");
   background-size: cover;
@@ -128,10 +130,11 @@ footer ul {
 
 /* il é ou saif ?? */
 .show-links {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .mobile-links {
   display: none;
@@ -275,17 +278,17 @@ div button {
 .bot-menu-cont {
   display: flex;
   padding-bottom: 6rem;
-  
 }
 .bot-menu {
   display: flex;
   flex-direction: column;
   color: var(--accent-color);
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  
 }
 body {
   background-color: #ced4da;
@@ -331,7 +334,7 @@ select::-ms-expand {
   line-height: 2.3;
   background: #4d4d4d;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 .select::after {
   content: "\25BC";
@@ -381,7 +384,6 @@ select::-ms-expand {
 .button-picture {
   max-width: 10rem;
   margin-bottom: 1rem;
-  
 }
 @media (max-width: 607px) /* and(min-width:400) */ {
   .middle-button {
@@ -413,14 +415,13 @@ select::-ms-expand {
 }
 
 .black-star {
-  
-  display:block;
+  display: block;
   margin-left: -40rem;
   margin-top: 5rem;
   z-index: 0;
   filter: brightness(75%);
   position: absolute;
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
 .welcome {
@@ -430,10 +431,12 @@ select::-ms-expand {
   position: absolute;
   left: 20%;
   font-family: "soloist_italicitalic";
-  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(
+    --accent-color
+  ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
-  text-shadow: 5px 8px 5px  rgb(48, 43, 43);
+  text-shadow: 5px 8px 5px rgb(48, 43, 43);
 }
 
 .fondhangarrebel {
@@ -458,6 +461,30 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.number-text {
+  color: white;
+}
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.slides img {
+  max-height: 100%;
+  max-width: 70%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* Texte Faucon Millenium*/
@@ -486,7 +513,10 @@ p {
 
 /* Specificités Faucon Millenium*/
 .specstext {
-  background-color: rgb(185, 189, 192);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.25rem;
   margin: 2rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
@@ -529,16 +559,32 @@ p {
   color: white;
 }
 .slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .slides img {
-  max-width: 100%;
+  max-height: 100%;
+  max-width: 70%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* Texte Chasseur Tie*/
 h1 {
   margin: 0;
 }
+
+
 
 .chasseurtie {
   background-color: #ced4da;
@@ -577,17 +623,15 @@ p {
   right: 0;
   min-height: 1vh;
 }
-  .specs h3{
-    text-align: center;
-  }
+.specs h3 {
+  text-align: center;
+}
 
-  
-
-#id_img_empire{
+#id_img_empire {
   max-height: 10rem;
   max-width: 10rem;
 }
-#id_img_rebel{
+#id_img_rebel {
   max-height: 10rem;
   max-width: 10rem;
 }
