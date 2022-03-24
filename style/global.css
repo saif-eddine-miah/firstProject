@@ -482,6 +482,30 @@ select::-ms-expand {
   justify-content: center;
 }
 
+.number-text {
+  color: white;
+}
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.slides img {
+  max-height: 100%;
+  max-width: 70%;
+}
+
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Texte Faucon Millenium*/
 h1 {
   margin: 0;
@@ -507,7 +531,10 @@ p {
 
 /* Specificités Faucon Millenium*/
 .specstext {
-  background-color: rgb(185, 189, 192);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.25rem;
   margin: 2rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
@@ -561,10 +588,21 @@ p {
   max-width: 70%;
 }
 
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Texte Chasseur Tie*/
 h1 {
   margin: 0;
 }
+
+
 
 .chasseurtie {
   background-color: #ced4da;

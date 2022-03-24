@@ -350,6 +350,15 @@ form label:hover {
   justify-content: center;
 }
 
+.specs-container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 /* Texte Faucon Millenium*/
 .fauconmillenium {
   background-color: #ced4da;
@@ -361,16 +370,26 @@ form label:hover {
 }
 .fauconmillenium h1 {
   text-align: center;
-  margin: 0;
+  
 }
 
 .fauconmillenium,
 h1,
 p {
-  padding: 1rem;
-  margin: auto;
+  
+  margin: 2rem;
 }
 
+.specs {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.specs div {
+  max-height: 20rem;
+}
 /* Specificités Faucon Millenium*/
 .specs h3 {
   text-align: center;
@@ -379,3 +398,14 @@ p {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
 }
+
+.imgpilote {
+  max-height: 100%;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  border-radius: 2rem;
+  max-width: 25rem;
+}
+.Pilotefaucon {
+  display: block;
+  max-width: 100%;
