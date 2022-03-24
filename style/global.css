@@ -7,6 +7,7 @@
   --secondary-color: #757575;
 }
 body {
+  
   margin: 0;
   background-color: #ced4da;
   /* width: 100vw;
@@ -21,6 +22,7 @@ nav {
   margin: -5px;
 }
 footer {
+  z-index: 1000;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -123,8 +125,10 @@ footer ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 .footer-contact {
+  z-index: 1000;
   margin: 0 auto;
 }
 
@@ -276,8 +280,11 @@ div button {
 .bot-menu-cont {
   display: flex;
   padding-bottom: 6rem;
+  
+  
 }
 .bot-menu {
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   color: var(--accent-color);
@@ -372,7 +379,7 @@ select::-ms-expand {
   /* Menu du bas accueil contenu */
   display: flex;
   flex-direction: column-reverse;
-  color: var(--accent-color);
+  color: var(--accent-colopr);
   align-items: center;
   background-color: #77777700;
   padding: 0.2rem 0.8rem;
@@ -411,15 +418,19 @@ select::-ms-expand {
   width: 90%;
   margin: auto 2rem;
 }
+ .divider-img,footer > *,footer, nav {
+  position: relative;
+  z-index: 100;
+}
 
-.black-star {
-  display: block;
-  margin-left: -40rem;
+.black-star1 {
+  display:block;
+  margin-left: -20rem; 
   margin-top: 5rem;
-  z-index: 0;
+  z-index: -0;
   filter: brightness(75%);
-  position: absolute;
-  background-attachment: fixed;
+  position: fixed; 
+  width: 100%;
 }
 
 .welcome {

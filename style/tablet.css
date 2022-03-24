@@ -32,8 +32,13 @@ nav {
 .welcome {
   font-size: 50px;
 }
-.black-star {
-  margin-left: -40rem;
+.black-star1 {
+  margin-left: -5rem;
+  
+  width: 40rem;
+  height: auto;
+  
+  
 }
 .kaaris-mdrrrr {
   font-size: 40px;
