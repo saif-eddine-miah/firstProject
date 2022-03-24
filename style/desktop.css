@@ -410,3 +410,27 @@ p {
   display: block;
   max-width: 100%;
 }
+
+.comparison-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  min-height:300px;
+}
+
+.ship-box {
+  max-width:25%;
+  border: none;
+  background-color: #28282888;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.spec{
+  height: 30vh;
+  padding: 1rem;
+}
+
+#win{
+  font-size: x-large;
+}

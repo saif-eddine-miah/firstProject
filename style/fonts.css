@@ -8,16 +8,16 @@
 
 @font-face {
   font-family: "soloist_3dregular";
-  src: url("soloist3d-webfont.woff2") format("woff2"),
-    url("soloist3d-webfont.woff") format("woff");
+  src: url("/fonts/soloist3d-webfont.woff2") format("woff2"),
+    url("/fonts/soloist3d-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "soloist_academyregular";
-  src: url("soloistacad-webfont.woff2") format("woff2"),
-    url("soloistacad-webfont.woff") format("woff");
+  src: url("/fonts/soloistacad-webfont.woff2") format("woff2"),
+    url("/fonts/soloistacad-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "soloist_gradientregular";
-  src: url("fonts/soloistgrad1-webfont.woff2") format("woff2"),
+  src: url("/fonts/soloistgrad1-webfont.woff2") format("woff2"),
     url("fonts/soloistgrad1-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
