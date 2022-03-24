@@ -4,21 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
     <link
       rel="stylesheet"
-      href="style/desktop.css"
       media="screen and (min-width: 992px)"
+      href="style/desktop.css"
     />
     <link
       rel="stylesheet"
       media="screen and (min-width: 576px) and (max-width: 992px)"
       href="style/tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="style/global.css"
-      media="screen and (max-width: 580px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +26,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"
+    />
     <script src="index.js" defer></script>
+    <script src="swal.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="swal.js" defer></script>
     <title>Vaisseaux de l'Empire</title>
   </head>
 
@@ -58,12 +61,10 @@
       <div class="slideshow-container">
         <div class="fondchasseurtie">
           <div class="photochasseurtie slides fade">
-            <div class="number-text">1/5</div>
             <img src="src/img/Chasseur-tie.png" alt="Photo chasseur TIE" />
           </div>
 
           <div class="slides fade">
-            <div class="number-text">2/5</div>
             <img
               src="src/img/tie-interceptor.png"
               alt="Photo intercepteur TIE"
@@ -71,17 +72,14 @@
           </div>
 
           <div class="slides fade">
-            <div class="number-text">3/5</div>
             <img src="src/img/Lambda.png" alt="Lambda class" />
           </div>
 
           <div class="slides fade">
-            <div class="number-text">4/5</div>
             <img src="src/img/upsilon.png" alt="Upsilon class" />
           </div>
 
           <div class="slides fade">
-            <div class="number-text">5/5</div>
             <img
               src="src/img/CountDookusSolarSailer-WotF.jpg"
               alt="Solar sailor"
@@ -92,44 +90,50 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
-    <div class="chasseurtie">
-      <h1 id="spec-page-title">Le chasseur TIE</h1>
-      <p id="spec-page-desc">
-        Le chasseur TIE (Twin Ion Engine ou Double Moteur Ionique) fut construit
-        par le système de flotte Sienar. Il est assurément le chasseur qui aura
-        vu le plus de modèles différents. Ce chasseur était rapide et maniable.
-        Le chasseur TIE est redoutable en combat rapproché. Il fut le fleuron de
-        la chasse impériale à raison de plus d'un million d'unités en service en
-        l'an 3 ap.BY. Son bruit caractéristique et son aspect menaçant en firent
-        un engin très reconnaissable. <br />
-        Toutefois, le chasseur TIE était conçu pour un déploiement en masse, au
-        détriment de la qualité. Son équipement était minimaliste, ce qui en
-        fait un appareil vulnérable. Ainsi, le chasseur TIE n’était ni équipé
-        d'hyperpropulseur ni d'astromécano. Les boucliers déflecteurs étaient
-        inexistants, tout comme les systèmes de survie.
-      </p>
-    </div>
-
-    <div class="specs">
-      <div class="specstext">
-        <h3>Spécificités</h3>
-        <ul>
-          <li id="spec-class">Classe : chasseur stellaire</li>
-          <li id="spec-constructor">Construction : Sienar Fleet System</li>
-          <li id="spec-longeur">Longueur : 6,3 mètres</li>
-          <li id="spec-largeur">Largeur : 6,4 mètres</li>
-          <li id="spec-speed">Vitesse maximale atmosphérique : 1200 km/h</li>
-          <li id="spec-cost">Coût : 60 000 crédits</li>
-        </ul>
+    <div class="specs-container">
+      <div class="chasseurtie">
+        <h1 id="spec-page-title">Le chasseur TIE</h1>
+        <p id="spec-page-desc">
+          Le chasseur TIE (Twin Ion Engine ou Double Moteur Ionique) fut construit
+          par le système de flotte Sienar. Il est assurément le chasseur qui aura
+          vu le plus de modèles différents. Ce chasseur était rapide et maniable.
+          Le chasseur TIE est redoutable en combat rapproché. Il fut le fleuron de
+          la chasse impériale à raison de plus d'un million d'unités en service en
+          l'an 3 ap.BY. Son bruit caractéristique et son aspect menaçant en firent
+          un engin très reconnaissable. <br />
+          Toutefois, le chasseur TIE était conçu pour un déploiement en masse, au
+          détriment de la qualité. Son équipement était minimaliste, ce qui en
+          fait un appareil vulnérable. Ainsi, le chasseur TIE n’était ni équipé
+          d'hyperpropulseur ni d'astromécano. Les boucliers déflecteurs étaient
+          inexistants, tout comme les systèmes de survie.
+        </p>
       </div>
-      <div class="Pilotechasseurtie">
-        <img
-          class="imgpilote"
-          src="src/img/figurine-tie-fighter-pilot-backstabber-mouse-droid-exclusive-kotobukiya_ccexpress.png"
-          alt="Pilote chasseur TIE"
-        />
+      <div class="specs">
+        <div class="specstext">
+          <h3>Spécificités</h3>
+          <ul>
+            <li id="spec-class">Classe : chasseur stellaire</li>
+            <li id="spec-constructor">Construction : Sienar Fleet System</li>
+            <li id="spec-longeur">Longueur : 6,3 mètres</li>
+            <li id="spec-largeur">Largeur : 6,4 mètres</li>
+            <li id="spec-speed">Vitesse maximale atmosphérique : 1200 km/h</li>
+            <li id="spec-cost">Coût : 60 000 crédits</li>
+          </ul>
+        </div>
+        <div class="Pilotechasseurtie">
+          <img
+            class="imgpilote"
+            src="src/img/figurine-tie-fighter-pilot-backstabber-mouse-droid-exclusive-kotobukiya_ccexpress.png"
+            alt="Pilote chasseur TIE"
+          />
+        </div>
       </div>
     </div>
+    <img
+      class="divider-img"
+      src="src/img/triangleNegative(1).svg"
+      alt="triangle"
+    />
     <footer>
       <div class="footer-links">
         <ul>
@@ -140,12 +144,14 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <form action="post">
+        <form>
           <label for="formNom">Nom</label>
-          <input id="formNom" type="text" />
+          <input id="formNom" type="text" placeholder="Han Solo" />
           <label for="formMail">Mail</label>
-          <input id="formMail" type="text" />
-          <button id="form-button">Envoyer</button>
+          <input id="formMail" type="text" placeholder="han.solo@falcon.sw" />
+          <label for="formMessage">Message</label>
+          <input id="formMessage" type="text" placeholder="Message" />
+          <a id="form-button">Envoyer</a>
         </form>
       </div>
       <div class="footer-social">

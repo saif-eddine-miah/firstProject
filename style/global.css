@@ -9,13 +9,16 @@
 
 body {
   margin: 0;
-  background-color: grey;
+  background-color: #ced4da ;
   /* width: 100vw;
   overflow-x:hidden ; */
 }
 nav {
   padding: 8px;
   background-color: transparent;
+}
+.divider-img {
+  margin: -5px;
 }
 footer {
   justify-content: center;
@@ -38,6 +41,9 @@ form {
 }
 form label {
   color: black;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 form input,
 form button {
@@ -49,9 +55,15 @@ form input {
   border-radius: 8px;
 }
 footer ul li a {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
   color: white;
   list-style: none;
   text-decoration: none;
+}
+footer ul li a:hover {
+  color: var(--accent-color);
 }
 footer ul {
   padding: 0;
@@ -125,6 +137,10 @@ footer ul {
   display: none;
 }
 .show-links a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "soloist_italicitalic";
+  font-stretch: condensed;
   color: white;
   text-decoration: none;
 }
@@ -136,8 +152,15 @@ i.fa-eclipse {
   min-width: 35px;
   color: black;
 }
+i.fa-brands:hover,
+i.fa-solid:hover,
+form label:hover {
+  color: var(--accent-color);
+}
 
 
+
+.fa-brands,
 .fa-envelope {
   margin-top: 16px;
   padding: 16px;
@@ -222,16 +245,34 @@ div button {
   width: 40%;
   border-radius: 25px;
 }
+#form-button:hover {
+  border: 0 solid white;
+  border-width: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: 0px 20px 0px -10px white, 0px -20px 0px -10px white,
+    20px 0px 0px -10px white, -20px 0px 0px -10px white,
+    0px 0px 0px 10px #c5c3c6, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}
 .bot-menu-cont {
   display: flex;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
+  
 }
 .bot-menu {
   display: flex;
   flex-direction: column;
   color: var(--accent-color);
+  font-family: "soloist_italicitalic";
+  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  
 }
 body {
+  background-color: #ced4da;
   margin: 0;
 }
 
@@ -291,6 +332,12 @@ select::-ms-expand {
   color: #fffb00;
 }
 
+.topnav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .top-page {
   background-image: url("/src/img/battle-background.jpg");
   background-size: cover;
@@ -314,28 +361,29 @@ select::-ms-expand {
   padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   margin: 0 0.5rem;
-  
 }
-.button-picture{
+.button-picture {
   max-width: 10rem;
+  margin-bottom: 1rem;
   
 }
-@media(max-width: 607px)/* and(min-width:400) */{
-  .middle-button{
-    flex:0 0 100%;
-    order:2;
+@media (max-width: 607px) /* and(min-width:400) */ {
+  .middle-button {
+    flex: 0 0 100%;
+    order: 2;
   }
 }
-.kaaris-mdrrrr{
+.kaaris-mdrrrr {
   margin: auto 1rem;
   margin-bottom: 10rem;
-  color:var(--accent-color);
+  color: var(--accent-color);
   background-color: #28282869;
   padding: 0.25rem;
   border-radius: 0.5rem;
-  flex-basis: auto ;
+  flex-basis: auto;
   z-index: 1;
   position: relative;
+  font-family: sans-serif;
 }
 
 .hero-1plan {
@@ -343,30 +391,37 @@ select::-ms-expand {
   justify-content: space-between;
   flex-shrink: 0;
   align-items: center;
-  height: 40rem;
+  height: 35rem;
   width: 90%;
   margin: auto 2rem;
 }
 
 .black-star {
+  
+  display:block;
   margin-left: -40rem;
+  margin-top: 5rem;
   z-index: 0;
-  filter:brightness(75%);
+  filter: brightness(75%);
   position: absolute;
+  background-attachment:fixed;
 }
 
 .welcome {
   max-width: 60%;
-  z-index: 1 ;
+  z-index: 1;
   flex-wrap: wrap;
-  color: #ffe919;
   position: absolute;
   left: 20%;
+  font-family: "soloist_italicitalic";
+  -webkit-text-fill-color: var(--accent-color); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 5px 8px 5px  rgb(48, 43, 43);
 }
 
 .fondhangarrebel {
   background-image: url("/src/img/Hangar.jpg");
-  
 }
 
 .fondfaucon {
@@ -395,7 +450,7 @@ h1 {
 }
 
 .fauconmillenium {
-  background-color: grey;
+  background-color: #ced4da;
   margin: 0%;
   padding: 0%;
   font-family: "Noto Sans", sans-serif;
@@ -469,7 +524,7 @@ h1 {
 }
 
 .chasseurtie {
-  background-color: grey;
+  background-color: #ced4da;
   margin: 0%;
   padding: 0%;
   font-family: "Noto Sans", sans-serif;
@@ -488,7 +543,10 @@ p {
 
 /* Specificités chasseur Tie*/
 .specstext {
-  background-color: rgb(185, 189, 192);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.527);
+  background-color: #495057;
+  color: white;
+  padding: 0.25rem;
   margin: 2rem;
   font-family: "Noto Sans", sans-serif;
   border-radius: 2rem;
