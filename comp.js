@@ -46,6 +46,8 @@ battleValue -= 25;
 function loadBattleBar(){
 console.log(battleValue)
 myBar.style.width = `${battleValue}%`;
+if (battleValue<50){console.log("Rebel Wins");}
+if (battleValue>50){console.log("Empire Wins");}
 battleValue = 0;
 console.log(battleValue)
 }
