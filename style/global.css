@@ -121,11 +121,13 @@ footer ul {
   height: 30rem;
 }
 .fond-accueil {
-  background-image: url("/src/img/fond-accueil.jpg");
+  background:linear-gradient(rgba(0, 0, 0, 0.9)0%,rgba(0, 0, 0, 0.9)1%, rgba(0, 0, 0, 0.25)100%),url("/src/img/fond-accueil.jpg");
+  /* background-image: url("/src/img/fond-accueil.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  /* filter: brightness(75%); */
 }
 .footer-contact {
   z-index: 1000;
@@ -312,6 +314,7 @@ body {
 .background-div {
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 select {
@@ -399,16 +402,26 @@ select::-ms-expand {
   }
 }
 .kaaris-mdrrrr {
-  margin: auto 1rem;
-  margin-bottom: 10rem;
-  color: var(--accent-color);
-  background-color: #28282869;
+  margin: auto 2rem;
+  margin-bottom: 4rem;
+  color: rgb(241, 180, 10);
+  /* background-color: #769bff0a; */
   padding: 0.25rem;
   border-radius: 0.5rem;
   flex-basis: auto;
   z-index: 1;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Noto Sans",sans-serif;
+  text-shadow: 4px 6px 5px rgb(48, 43, 43);
+
+}
+@media (min-width: 1400px) {
+  .kaaris-mdrrrr{
+  transform: perspective(20rem) rotateX(20deg);
+  max-width:80%;
+  margin: auto 15rem;
+  margin-bottom: 20rem;
+  }
 }
 
 .hero-1plan {
@@ -429,7 +442,7 @@ select::-ms-expand {
   display:block;
   margin-left: -20rem; 
   margin-top: 5rem;
-  z-index: -0;
+  z-index: 0;
   filter: brightness(75%);
   position: fixed; 
   width: 100%;
