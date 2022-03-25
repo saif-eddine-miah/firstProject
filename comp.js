@@ -44,6 +44,7 @@ battleValue -= 25;
 })
 let winner = document.getElementById('win')
 function loadBattleBar(){
+window.scrollTo(0,450);
 console.log(battleValue)
 myBar.style.width = `${battleValue}%`;
 if (battleValue<50){winner.innerText =  ("Rebel's won !") ;winner.style.color='rgb(0, 183, 255)';}

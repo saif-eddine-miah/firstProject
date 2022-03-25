@@ -24,14 +24,14 @@
       media="screen and (min-width: 576px) and (max-width: 992px)"
       href="style/tablet.css"
     />
-    
+
     <link rel="stylesheet" href="style/fonts.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style/fonts.css">
-    <title>Ship Battle</title>
+    <link rel="stylesheet" href="style/fonts.css" />
+    <title>comparison</title>
   </head>
   <body>
     <div class="top-page">
@@ -55,20 +55,20 @@
         </div>
       </nav>
       <div class="intro">
-        <h1>Lorem ipsum</h1>
+        <h1>Prenez part à la bataille spatiale !</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
-          dapibus pellentesque. Praesent porttitor, dui tincidunt pretium egestas,
-          quam enim facilisis felis, vel euismod nibh elit eget nisl. Aliquam
-          aliquam est vitae turpis suscipit tempor. Phasellus sed porttitor arcu,
-          pharetra vestibulum libero. 
+          Bienvenue sur le comparateur de vaisseau. Ici vous pouvez comparer les
+          vaisseaux cultes de la saga Starwars pour savoir lequel serait le plus
+          puissant en combat singulier.Il vous suffit de sélectionner un
+          vaisseau de l'Empire galactique et un vaisseau de l'alliance
+          rebelle. Appuyez sur le bouton combat et le tour est joué.
+        </p>
       </div>
-      </p>
       <div class="comparison-boxes">
         <div class="ship-box">
           <div class="select">
             <select name="empire" id="empire-select">
-              <option selected disabled>Choose a ship !</option>
+              <option selected disabled>Choisissez un vaisseau !</option>
               <option value="1">Chasseur TIE</option>
               <option value="2">Intercepteur TIE</option>
               <option value="3">Navette T-4a Lambda</option>
@@ -82,7 +82,7 @@
         <div class="ship-box">
           <div class="select">
             <select name="empire" id="rebel-select">
-              <option selected disabled>Choose a ship !</option>
+              <option selected disabled>Choisissez un vaisseau !</option>
               <option value="1">Chasseur Jedi</option>
               <option value="2">Faucon</option>
               <option value="3">X-Wing</option>
@@ -94,21 +94,23 @@
         </div>
       </div>
       <div class="button" onclick="loadBattleBar()">
-        <button class="battle">Battle</button>
+        <button class="battle">Combat</button>
       </div>
     </div>
     <div class="spec">
       <div class="inside-spec">
-      <img src="src/img/Empire-Logo.png" alt="empire">
-      <div id="myProgress">
-        <div id="myBar"></div>
+        <img src="src/img/Empire-Logo.png" alt="empire" />
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+        <img src="/src/img/Alliance-Logo.png" alt="rebel" />
       </div>
-      <img src="/src/img/Alliance-Logo.png" alt="rebel">
-    </div>
-      <p id="win">Who will win ?</p>
+      <p id="win">Qui va gagner ?</p>
     </div>
     <div class="startAgain">
-      <button onClick="window.location.reload();">Start Again</button>
+      <button class="reload" onClick="window.location.reload();">
+        Recommencer ?
+      </button>
     </div>
   </body>
   <footer>
