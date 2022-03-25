@@ -53,3 +53,12 @@ battleValue = 0;
 console.log(battleValue)
 
 }
+
+document.getElementById("reload").addEventListener("click",function(event){
+    
+    window.location.reload();
+});
+history.scrollRestoration ="manual";
+window.onbeforeunload=function(){
+    window.scrollTo(0,0);
+}
