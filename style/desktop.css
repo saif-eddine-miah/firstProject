@@ -94,7 +94,7 @@ nav {
   margin-left: auto;
   margin-left: 30%;
   width: auto;
-  height: auto; 
+  height: auto;
 }
 .welcome {
   position: absolute;
@@ -102,7 +102,7 @@ nav {
   font-size: 70px;
 }
 .kaaris-mdrrrr {
-  font-size: 40px;
+  font-size: 38px;
   text-align: -webkit-center;
 }
 .bot-menu-cont {
@@ -275,7 +275,6 @@ i.fa-brands,
 i.fa-solid,
 form label {
   color: white;
-  font-family: "Noto Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -416,22 +415,22 @@ p {
   display: flex;
   justify-content: center;
   gap: 10vh;
-  min-height:300px;
+  min-height: 300px;
 }
 
 .ship-box {
-  max-width:25%;
+  max-width: 25%;
   border: none;
   background-color: #28282888;
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
 }
 
-.spec{
+.spec {
   height: 30vh;
   padding: 1rem;
 }
 
-#win{
+#win {
   font-size: x-large;
 }
