@@ -467,7 +467,7 @@ nav {
   -webkit-text-fill-color: var(
     --accent-color
   ); /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   text-shadow: 5px 8px 5px rgb(48, 43, 43);
 }
