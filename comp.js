@@ -44,6 +44,7 @@ battleValue -= 25;
 })
 let winner = document.getElementById('win')
 function loadBattleBar(){
+window.scrollTo(0,450);
 console.log(battleValue)
 myBar.style.width = `${battleValue}%`;
 if (battleValue<50){winner.innerText =  ("Rebel's won !") ;winner.style.color='rgb(0, 183, 255)';}
@@ -51,4 +52,13 @@ if (battleValue>50){winner.innerText =  ("The Empire won !") ;winner.style.color
 battleValue = 0;
 console.log(battleValue)
 
+}
+
+document.getElementById("reload").addEventListener("click",function(event){
+    
+    window.location.reload();
+});
+history.scrollRestoration ="manual";
+window.onbeforeunload=function(){
+    window.scrollTo(0,0);
 }
