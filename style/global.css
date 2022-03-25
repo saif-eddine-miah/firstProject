@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 :root {
   --accent-color: #ffe919;
   --main-grey: #a8b7ab;
@@ -121,11 +124,18 @@ footer ul {
   height: 30rem;
 }
 .fond-accueil {
-  background-image: url("/src/img/fond-accueil.jpg");
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("/src/img/fond-accueil.jpg");
+  /* background-image: url("/src/img/fond-accueil.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  /* filter: brightness(75%); */
 }
 .footer-contact {
   z-index: 1000;
@@ -179,7 +189,7 @@ form label:hover {
 }
 
 .ship-box {
-  width:40%;
+  width: 40%;
   border: none;
   background-color: #28282888;
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
@@ -231,13 +241,13 @@ img {
   padding: 1rem;
 }
 .battle {
-  background:    #00000000;
+  background: #00000000;
   border-radius: 1000px;
-  padding:       10px 40px;
-  color:         #ffffff;
-  display:       inline-block;
-  text-align:    center;
-  font:          normal bold 20px/1 "Noto Sans", sans-serif;
+  padding: 10px 40px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  font: normal bold 20px/1 "Noto Sans", sans-serif;
 }
 
 .startAgain {
@@ -304,6 +314,7 @@ body {
 .background-div {
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 select {
@@ -391,16 +402,27 @@ select::-ms-expand {
   }
 }
 .kaaris-mdrrrr {
-  margin: auto 1rem;
-  margin-bottom: 10rem;
-  color: var(--accent-color);
-  background-color: #28282869;
+  text-align: justify;
+  overflow-y: hidden;
+  margin: auto 2rem;
+  margin-bottom: 4rem;
+  color: rgb(241, 180, 10);
+  /* background-color: #769bff0a; */
   padding: 0.25rem;
   border-radius: 0.5rem;
   flex-basis: auto;
   z-index: 1;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  text-shadow: 4px 6px 5px rgb(48, 43, 43);
+}
+@media (min-width: 1400px) {
+  .kaaris-mdrrrr {
+    transform: perspective(20rem) rotateX(20deg);
+    max-width: 55%;
+    margin: auto 15rem;
+    margin-bottom: 20rem;
+  }
 }
 
 .hero-1plan {
@@ -424,7 +446,7 @@ nav {
   display: block;
   margin-left: -20rem;
   margin-top: 5rem;
-  z-index: -0;
+  z-index: 0;
   filter: brightness(75%);
   position: fixed;
   width: 100%;
@@ -630,8 +652,6 @@ p {
 .specs h3 {
   text-align: center;
 }
-
-
 
 #myProgress {
   width: 100%;
